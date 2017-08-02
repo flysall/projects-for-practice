@@ -106,25 +106,27 @@ public class MainFrame extends JFrame {
 		this.toolPanel.add(Box.createVerticalStrut(10));
 		this.toolPanel.add(scoreBox);
 		this.toolPanel.add(Box.createVerticalStrut(10));
+		this.toolPanel.add(levelTextBox);
+		this.toolPanel.add(Box.createVerticalStrut(10));
 		this.toolPanel.add(levelBox);
 		this.toolPanel.add(Box.createVerticalStrut(15));
 		this.toolPanel.add(this.resumeBox);
 		this.toolPanel.add(Box.createVerticalStrut(15));
 		this.toolPanel.add(this.pauseBox);
-		this.toolPanel.add(Box.createHorizontalStrut(15));
+		this.toolPanel.add(Box.createVerticalStrut(15));
 		this.toolPanel.add(this.startBox);
 		this.toolPanel.add(Box.createVerticalStrut(30));
-		this.toolPanel.add(blankBox);
+		this.toolPanel.add(this.nextTextBox);
 
 		this.blankBox.add(Box.createHorizontalStrut(99));
 		this.toolPanel.add(blankBox);
 
 		this.add(this.gamePanel, BorderLayout.CENTER);
 		this.add(this.toolPanel, BorderLayout.EAST);
-		this.setPreferredSize(new Dimension(349, 416));
+		this.setPreferredSize(new Dimension(349, 413));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLocation(350, 200);
-		;
+		this.setLocation(150, 200);
+		
 		this.setResizable(false);
 		this.setTitle("TETRIS");
 		this.pack();
@@ -137,7 +139,7 @@ public class MainFrame extends JFrame {
 	}
 
 	// 鼠标经过暂停按钮是显示的图片
-	private final static ImageIcon PAUSE_ON_ICON=new ImageIcon("images/button-bg-pause-on.gif");
+	private final static ImageIcon PAUSE_ON_ICON = new ImageIcon("images/button-bg-pause-on.gif");
 	// 暂停按钮图片
 	private final static ImageIcon PAUSE_ICON = new ImageIcon("images/button-bg-pause.gif");
 	// 继续按钮图片
@@ -151,7 +153,7 @@ public class MainFrame extends JFrame {
 
 	private void initListeners() {
 		this.resumeLabel.addMouseListener(new MouseAdapter() {
-			public void mouseEnterred(MouseEvent e) {
+			public void mouseEntered(MouseEvent e) {
 				resumeLabel.setIcon(RESUME_ON_ICON);
 			}
 
@@ -284,59 +286,59 @@ public class MainFrame extends JFrame {
 	private boolean isRightBlock() {
 		List<Square> squares = this.currentPiece.getSquares();
 		for (int i = 0; i < squares.size(); i++) {
-			Square s =  squares.get(i);
+			Square s = squares.get(i);
 			Square block = getSquare(s.getBeginX() + Piece.SQUARE_BORDER, s.getBeginY());
-			if (block != null) 
+			if (block != null)
 				return true;
 		}
 		return false;
 	}
-	
+
 	/**
 	 * 向下加速
 	 */
 	private void down() {
 		if (this.pauseFlag)
 			return;
-		if (this.currentPiece == null) 
+		if (this.currentPiece == null)
 			return;
-		//判断快速下降是否有障碍或者到底部
-		if (isBlock() || isBottom()) 
+		// 判断快速下降是否有障碍或者到底部
+		if (isBlock() || isBottom())
 			return;
-		int distance =  Piece.SQUARE_BORDER;
+		int distance = Piece.SQUARE_BORDER;
 		this.currentPiece.setSquaresYLocation(distance);
-		//改变位置后判断是否显示下一个
+		// 改变位置后判断是否显示下一个
 		showNext();
 		this.gamePanel.repaint();
 	}
-	
+
 	/**
 	 * 创建下一个方块
 	 */
 	private void createNextPiece() {
-		this.nextPiece = this.creator.createPiece(NEXT_Y, NEXT_Y);
+		this.nextPiece = this.creator.createPiece(NEXT_X, NEXT_Y);
 		this.repaint();
 	}
-	
-	//下一个Piece的位置
+
+	// 下一个Piece的位置
 	private final static int NEXT_X = 270;
 	private final static int NEXT_Y = 320;
-	//当前Piece的开始坐标
+	// 当前Piece的开始坐标
 	private final static int BEGIN_X = Piece.SQUARE_BORDER * 6;
-	private final static int BEGIN_Y = -32;
-	
+	private final static int BEGIN_Y = 0;
+
 	/**
 	 * 开始游戏
 	 */
 	public void start() {
-		//初始化界面二维数组
+		// 初始化界面二维数组
 		initSquares();
 		if (this.timer != null)
 			this.timer.cancel();
 		createNextPiece();
 		this.currentPiece = creator.createPiece(BEGIN_X, BEGIN_Y);
 		this.timer = new Timer();
-		//初始化定时器
+		// 初始化定时器
 		this.tetrisTask = new TetrisTask(this);
 		int time = 1000 / this.currentLevel;
 		this.timer.schedule(this.tetrisTask, 0, time);
@@ -345,7 +347,7 @@ public class MainFrame extends JFrame {
 		this.score = 0;
 		this.scoreLabel.setToolTipText(String.valueOf(this.score));
 	}
-	
+
 	/**
 	 * 暂停游戏
 	 */
@@ -355,12 +357,12 @@ public class MainFrame extends JFrame {
 			this.timer.cancel();
 		this.timer = null;
 	}
-	
+
 	/**
 	 * 继续游戏
 	 */
 	public void resume() {
-		if (!this.pauseFlag) 
+		if (!this.pauseFlag)
 			return;
 		this.timer = new Timer();
 		this.tetrisTask = new TetrisTask(this);
@@ -368,44 +370,43 @@ public class MainFrame extends JFrame {
 		timer.schedule(this.tetrisTask, 0, time);
 		this.pauseFlag = false;
 	}
-	
+
 	/**
 	 * 初始化界面二维数组
 	 */
 	private void initSquares() {
-		//可存放的方块个数
+		// 可存放的方块个数
 		int xSize = this.gamePanel.getWidth() / Piece.SQUARE_BORDER;
 		int ySize = this.gamePanel.getHeight() / Piece.SQUARE_BORDER;
 		this.squares = new Square[xSize][ySize];
 		for (int i = 0; i < this.squares.length; i++) {
 			for (int j = 0; j < this.squares[i].length; j++) {
-				this.squares[i][j] = new Square(Piece.SQUARE_BORDER * i, 
-						Piece.SQUARE_BORDER * j);
+				this.squares[i][j] = new Square(Piece.SQUARE_BORDER * i, Piece.SQUARE_BORDER * j);
 			}
 		}
 	}
-	
+
 	public Square[][] getSquares() {
 		return this.squares;
 	}
-	
+
 	public GamePanel getGamePanel() {
 		return this.gamePanel;
 	}
-	
-	public void paint (Graphics g) {
+
+	public void paint(Graphics g) {
 		super.paint(g);
-		if (this.nextPiece == null) 
+		if (this.nextPiece == null)
 			return;
 		ImageUtil.paintPiece(g, nextPiece);
 	}
-	
-	//进行下一个
+
+	// 进行下一个
 	public void showNext() {
 		if (isBlock() || isBottom()) {
-			//将当前Piece中所有Square加入界面中
+			// 将当前Piece中所有Square加入界面中
 			appendToSquares();
-			//判断是否失败
+			// 判断是否失败
 			if (isLost()) {
 				this.repaint();
 				this.timer.cancel();
@@ -413,17 +414,17 @@ public class MainFrame extends JFrame {
 				JOptionPane.showConfirmDialog(this, "游戏失败", "警告", JOptionPane.OK_CANCEL_OPTION);
 				return;
 			}
-			//清除行
+			// 清除行
 			cleanRows();
 			finishDown();
 		}
 	}
-		
+
 	/**
 	 * 得到可以清理的行集合
 	 */
 	private void cleanRows() {
-		//使用一个集合保存被删除的索引
+		// 使用一个集合保存被删除的索引
 		List<Integer> rowIndexs = new ArrayList<Integer>();
 		for (int j = 0; j < this.squares[0].length; j++) {
 			int k = 0;
@@ -432,9 +433,9 @@ public class MainFrame extends JFrame {
 				if (s.getImage() != null)
 					k++;
 			}
-			//若整行都有图片，则消除
+			// 若整行都有图片，则消除
 			if (k == this.squares.length) {
-				//对该行遍历，设置该行所有歌的图片为null
+				// 对该行遍历，设置该行所有歌的图片为null
 				for (int i = 0; i < this.squares.length; i++) {
 					Square s = this.squares[i][j];
 					s.setImage(null);
@@ -443,30 +444,32 @@ public class MainFrame extends JFrame {
 				addScore();
 			}
 		}
-		//处理悬浮的Square
+		// 处理悬浮的Square
 		handleDown(rowIndexs);
 	}
-		
-	//加入分数
+
+	// 加入分数
 	private void addScore() {
 		this.score += 10;
 		this.scoreLabel.setText(String.valueOf(score));
-		//若分数可以被100整除，则加一级
-		if ((this.score % 100) == 0){
+		// 若分数可以被100整除，则加一级
+		if ((this.score % 100) == 0) {
 			this.currentLevel += 1;
 			this.levelLabel.setText(String.valueOf(this.currentLevel));
-			//重新设置定时器
+			// 重新设置定时器
 			this.timer.cancel();
-			this.timer =  new Timer();
+			this.timer = new Timer();
 			this.tetrisTask = new TetrisTask(this);
 			int time = 1000 / this.currentLevel;
 			timer.schedule(this.tetrisTask, 0, time);
 		}
 	}
-	
+
 	/**
 	 * 处理行消除后其他Square的下降
-	 * @param rowIndexs 被删除行的集合索引
+	 * 
+	 * @param rowIndexs
+	 *            被删除行的集合索引
 	 */
 	private void handleDown(List<Integer> rowIndexs) {
 		if (rowIndexs.size() == 0) {
@@ -474,17 +477,20 @@ public class MainFrame extends JFrame {
 		}
 		int minCleanRow = rowIndexs.get(0);
 		int cleanRowSize = rowIndexs.size();
-		//处理下降的Square
-		for (int j = this.squares[0].length - 1; j >= 0; j--){
+		// 处理下降的Square
+		for (int j = this.squares[0].length - 1; j >= 0; j--) {
 			if (j < minCleanRow) {
-				//遍历悬浮的行
+				// 遍历悬浮的行
 				for (int i = 0; i < this.squares.length; i++) {
 					Square s = this.squares[i][j];
 					if (s.getImage() != null) {
-						//得到下降前的图片
+						// 得到下降前的图片
 						Image image = s.getImage();
 						s.setImage(null);
-						//得到下降后对应的Square对象，数组的二维值要加上消除行的行数
+						// 得到下降后对应的Square对象，数组的二维值要加上消除行的行数
+						if (this.squares[i][j+cleanRowSize].getImage() != null){
+							System.out.println("squares[" + i + "] has exit image");
+						}
 						Square sdown = this.squares[i][j + cleanRowSize];
 						sdown.setImage(image);
 					}
@@ -492,82 +498,85 @@ public class MainFrame extends JFrame {
 			}
 		}
 	}
-	
+
 	/**
 	 * 判断是否到达最底部
 	 */
 	public boolean isBottom() {
+		System.out.println("--->the height of this GamePanel is: " + this.gamePanel.getHeight());
+		System.out.println("the height of Piece is:" + this.currentPiece.getMaxYLocation());
 		return this.currentPiece.getMaxYLocation() >= this.gamePanel.getHeight();
 	}
-	
+
 	/**
 	 * 判断当前Piece是否遇到障碍
+	 * 
 	 * @param 返回true表示遇到障碍
 	 */
 	public boolean isBlock() {
 		List<Square> squares = this.currentPiece.getSquares();
 		for (int i = 0; i < squares.size(); i++) {
 			Square s = squares.get(i);
-			//查找界面数组中的Square对象，Y加上边距
-			Square block = getSquare(s.getBeginX(),s.getBeginY() + Piece.SQUARE_BORDER);
-			if (block != null) 
+			// 查找界面数组中的Square对象，Y加上边距
+			Square block = getSquare(s.getBeginX(), s.getBeginY() + Piece.SQUARE_BORDER);
+			if (block != null)
 				return true;
 		}
 		return false;
 	}
-	
+
 	/**
 	 * 根据开始坐标在界面数组中查找相应Square
 	 */
-	private Square getSquare(int beginX, int beginY){
+	private Square getSquare(int beginX, int beginY) {
 		for (int i = 0; i < this.squares.length; i++) {
-			for(int j = 0; j < this.squares[i].length; j++) {
+			for (int j = 0; j < this.squares[i].length; j++) {
 				Square s = this.squares[i][j];
-				//与参数的开始坐标相同且图片不为空
-				if (s.getImage() != null && (s.getBeginX() == beginX) &&
-						(s.getBeginY() == beginY)) {
+				// 与参数的开始坐标相同且图片不为空
+				if (s.getImage() != null && (s.getBeginX() == beginX) && (s.getBeginY() == beginY)) {
 					return s;
 				}
 			}
 		}
 		return null;
 	}
-	
+
 	/**
 	 * 判断是否失败
+	 * 
 	 * @param true为失败
 	 */
 	private boolean isLost() {
-		for(int i = 0; i < this.squares.length; i++){
+		for (int i = 0; i < this.squares.length; i++) {
 			Square s = this.squares[i][0];
 			if (s.getImage() != null)
 				return true;
 		}
 		return false;
 	}
-	
-	//一个Piece对象完成下降
-	private void finishDown()  {
+
+	// 一个Piece对象完成下降
+	private void finishDown() {
 		this.currentPiece = this.nextPiece;
-		//设置新的Piece坐标
+		// 设置新的Piece坐标
 		this.currentPiece.setSquaresXLocation(-NEXT_X);
 		this.currentPiece.setSquaresXLocation(BEGIN_X);
 		this.currentPiece.setSquaresYLocation(-NEXT_Y);
 		this.currentPiece.setSquaresYLocation(BEGIN_Y);
 		createNextPiece();
 	}
-	
+
 	/**
 	 * 将Piece中所有Square加入二维数组
 	 */
-	private void appendToSquares()  {
+	private void appendToSquares() {
 		List<Square> squares = this.currentPiece.getSquares();
-		//遍历
+		// 遍历
 		for (Square square : squares) {
-			for(int i = 0; i < this.squares.length; i++) {
+			for (int i = 0; i < this.squares.length; i++) {
 				for (int j = 0; j < this.squares[i].length; j++) {
 					Square s = this.squares[i][j];
-					if (s.equals(square)) 
+					if (s.equals(square))
 						this.squares[i][j] = square;
 				}
 			}
@@ -577,15 +586,17 @@ public class MainFrame extends JFrame {
 }
 
 class TetrisTask extends TimerTask {
-	//主界面对象
+	// 主界面对象
 	private MainFrame mainFrame;
-	public TetrisTask(MainFrame mainFram) {
-		this.mainFrame =mainFrame;
+
+	public TetrisTask(MainFrame mainFrame) {
+		this.mainFrame = mainFrame;
 	}
+
 	public void run() {
-		//得到正在运动的方块
+		// 得到当前正在运动的大方块
 		Piece currentPiece = this.mainFrame.getCurrentPiece();
-		//判断障碍和底部
+		// 判断快整下降后是否有障碍或者到底部
 		if (this.mainFrame.isBlock() || this.mainFrame.isBottom()) {
 			this.mainFrame.showNext();
 			return;
@@ -594,24 +605,3 @@ class TetrisTask extends TimerTask {
 		this.mainFrame.getGamePanel().repaint();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

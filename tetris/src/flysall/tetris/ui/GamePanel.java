@@ -31,7 +31,7 @@ public class GamePanel extends JPanel{
 			for (int j = 0 ; j < squares[i].length; j++) {
 				Square s = squares[i][j];
 				if (s != null) {
-					g.drawImage(s.getImage(),s.getBeginX(), s.getBeginY(),this);
+					g.drawImage(s.getImage(),s.getBeginX(), s.getBeginY(), this);
 				}
 			}
 		}

@@ -13,7 +13,7 @@ public class Square {
 	// 开始的纵坐标
 	private int beginY;
 
-	public Square(Image image, int beginX, int bebinY) {
+	public Square(Image image, int beginX, int beginY) {
 		this.image = image;
 		this.beginX = beginX;
 		this.beginY = beginY;
@@ -48,7 +48,7 @@ public class Square {
 		this.beginY = beginY;
 	}
 
-	public boolean equalse(Object obj) {
+	public boolean equals(Object obj) {
 		if (obj instanceof Square) {
 			Square s = (Square) obj;
 			if ((s.getBeginX() == this.getBeginX() && (s.getBeginY() == this.getBeginY()))) {

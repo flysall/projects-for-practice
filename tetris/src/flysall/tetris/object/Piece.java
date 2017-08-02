@@ -78,7 +78,7 @@ public class Piece {
 
 	// 获取当前变化中x坐标的最小值
 	public int getMinXLocation() {
-		int result = 0;
+		int result = Integer.MAX_VALUE;
 		for (int i = 0; i < this.squares.size(); i++) {
 			Square s = this.squares.get(i);
 			if (s.getBeginX() < result)
@@ -100,14 +100,14 @@ public class Piece {
 
 	// 获取当前变化中y坐标的最小值
 	public int getMinYLocation() {
-		int result = 0;
+		int result = Integer.MAX_VALUE;
 		for (int i = 0; i < this.squares.size(); i++) {
 			Square s = this.squares.get(i);
 			if (result > s.getBeginY())
 				result = s.getBeginY();
 		}
 		// ?
-		return result + SQUARE_BORDER;
+		return result;
 	}
 
 }
