@@ -126,7 +126,7 @@ public class MainFrame extends JFrame {
 		this.setPreferredSize(new Dimension(349, 413));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLocation(150, 200);
-		
+
 		this.setResizable(false);
 		this.setTitle("TETRIS");
 		this.pack();
@@ -488,7 +488,7 @@ public class MainFrame extends JFrame {
 						Image image = s.getImage();
 						s.setImage(null);
 						// 得到下降后对应的Square对象，数组的二维值要加上消除行的行数
-						if (this.squares[i][j+cleanRowSize].getImage() != null){
+						if (this.squares[i][j + cleanRowSize].getImage() != null) {
 							System.out.println("squares[" + i + "] has exit image");
 						}
 						Square sdown = this.squares[i][j + cleanRowSize];
