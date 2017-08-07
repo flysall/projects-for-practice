@@ -25,6 +25,7 @@ public interface SystemLoader {
 	 */
 	List<Mail> getDraftBoxMails(MailContext ctx);
 	
+	List<Mail> getSentBoxMails(MailContext ctx);
 	/**
 	 * 得到垃圾箱邮件
 	 */

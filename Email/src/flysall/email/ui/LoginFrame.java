@@ -19,9 +19,11 @@ import flysall.email.util.PropertiesUtil;
 /**
  * 登录界面
  */
-public class LoginFrame {
+public class LoginFrame extends JFrame {
+
+	
 	//用户名
-	private JLabel userLabel = new JLabel("用户名：");
+	private JLabel userLabel = new JLabel("用户名：");	
 	private JTextField userField = new JTextField(20);
 	//确定按钮
 	private JButton confirmButton = new JButton("确定");
@@ -31,9 +33,9 @@ public class LoginFrame {
 	private Box buttonBox = Box.createHorizontalBox();
 	//用户Box
 	private Box userBox = Box.createHorizontalBox();
-	//最大Box
+	//最大的Box
 	private Box mainBox = Box.createVerticalBox();
-	//主界面
+	//系统主界面
 	private MainFrame mainFrame;
 	
 	public LoginFrame() {
@@ -62,48 +64,52 @@ public class LoginFrame {
 		this.setTitle("邮件收发客户端");
 		initListener();
 	}
-				
-				
+	
+	//初始化监听器
+	private void initListener() {
+		this.confirmButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				confirm();
+			}
+		});
+		this.cancelButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
+	}
+	
+	private void confirm() {
+		String user = this.userField.getText();
+		if (user.trim().equals("")) {
+			JOptionPane.showConfirmDialog(this, "请输入用户名", "警告", 
+					JOptionPane.OK_CANCEL_OPTION);
+			return;
+		}
+		//得到用户名对应的目录
+		File folder = new File(FileUtil.DATE_FOLDER + user);
+		//该用户第一次进入系统， 创建目录
+		if (!folder.exists()) {
+			folder.mkdir();
+		}
+		//得到配置文件
+		File config = new File(folder.getAbsolutePath() + FileUtil.CONFIG_FILE);
+		try {
+			//没有对应的配置文件，则创建
+			if (!config.exists()) {
+				config.createNewFile();
+			}
+			//读取配置并转换为MailContext对象
+			MailContext ctx = PropertiesUtil.createContext(config);
+			//设置MailContext的user属性
+			ctx.setUser(user);
+			//创建系统界面主对象
+			this.mainFrame = new MainFrame(ctx);
+			this.mainFrame.setVisible(true);
+			this.setVisible(false);
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new LoginException("配置文件错误");
+		}
+	}
 }
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

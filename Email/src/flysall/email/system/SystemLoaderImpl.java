@@ -57,7 +57,7 @@ public class SystemLoaderImpl implements SystemLoader {
 	/**
 	 * 得到已发送邮件
 	 */
-	public List<Mail> getSentMails(MailContext ctx) {
+	public List<Mail> getSentBoxMails(MailContext ctx) {
 		return getMails(ctx, FileUtil.SENT);
 	}
 	

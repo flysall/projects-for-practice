@@ -2,7 +2,7 @@ package flysall.email.box;
 
 import javax.swing.ImageIcon;
 
-public class SendBox extends AbstractBox{
+public class SentBox extends AbstractBox{
 	public String getText() {
 		return "已发送";
 	}
