@@ -70,7 +70,7 @@ public abstract class AbstractPageTask implements Runnable {
 					page = zhiHuHttpClient.getWebPage(tempRequest);
 				} else {
 					requestStartTime = System.currentTimeMillis();
-					page = zhiHuHttpClient.getWebpage(url);
+					page = zhiHuHttpClient.getWebPage(url);
 				}
 			} else if (request != null) {
 				if (proxyFlag) {
@@ -123,7 +123,7 @@ public abstract class AbstractPageTask implements Runnable {
 			if (currentProxy != null) {
 				currentProxy.setFailureTimes(currentProxy.getFailureTimes() + 1);
 			}
-			if (!zhiHuHttpClient.getDetailListPageThreadPool().isShutDown()) {
+			if (!zhiHuHttpClient.getDetailListPageThreadPool().isShutdown()) {
 				retry();
 			}
 		} finally {

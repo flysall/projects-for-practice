@@ -36,13 +36,13 @@ public class DetailPageTask extends AbstractPageTask{
 	static {
 		proxyDetailPageParser = getProxyDetailParser();
 	}
-	public DetailListPageTask(String url, boolean proxyFlag){
+	public DetailPageTask(String url, boolean proxyFlag){
 		super(url, proxyFlag);
 	}
 	
 	@Override
 	void retry(){
-		zhiHuHttpClient.getDetailPageThreadPool().execute(new DetailListPageTask(url, Config.isProxy));
+		zhiHuHttpClient.getDetailPageThreadPool().execute(new DetailPageTask(url, Config.isProxy));
 	}
 	
 	@Override 
@@ -81,7 +81,7 @@ public class DetailPageTask extends AbstractPageTask{
 	/**
 	 * 代理类
 	 */
-	private static DetailPageParser getProxyyDetailParser(){
+	private static DetailPageParser getProxyDetailParser(){
 		DetailPageParser detailPageParser = ZhiHuNewUserDetailPageParser.getInstance();
 		InvocationHandler invocationHandler = new SimpleInvocationHandler(detailPageParser);
 		DetailPageParser proxyDetailPageParser = (DetailPageParser) Proxy.newProxyInstance(detailPageParser.getClass().getClassLoader(),

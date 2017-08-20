@@ -76,7 +76,7 @@ public class Proxy implements Delayed, Serializable{
     }
 
     public void setTimeInterval(long timeInterval){
-        this.timeInterval=TimeUnit.NANOSECONDS.convert(timeInterval, TimeUnit.MILLISECONDS) + System.nanoTime();
+        this.timeInterval = TimeUnit.NANOSECONDS.convert(timeInterval, TimeUnit.MILLISECONDS) + System.nanoTime();
     }
     
     public long getDelay(TimeUnit unit){

@@ -111,7 +111,7 @@ public class DetailListPageTask extends AbstractPageTask{
 		return cn;
 	}
 	
-	public static Map<Thread, Connection> getConnecionMpa(){
+	public static Map<Thread, Connection> getConnectionMap(){
 		return connectionMap;
 	}
 	

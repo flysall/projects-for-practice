@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 线程池工具类，监视ThreadPoolExecutor执行
  */
-public class ThreadPoolMonitor {
+public class ThreadPoolMonitor implements Runnable{
 	private static Logger logger = SimpleLogger.getSimpleLogger(ThreadPoolMonitor.class);
 	private ThreadPoolExecutor executor;
 	public static volatile boolean isStopMonitor = false;

@@ -1,6 +1,5 @@
 package com.crawl;
 
-import com.crawl.core.util.Config;
 import com.crawl.core.util.SimpleLogger;
 import com.crawl.proxy.ProxyHttpClient;
 import com.crawl.zhihu.ZhiHuHttpClient;
