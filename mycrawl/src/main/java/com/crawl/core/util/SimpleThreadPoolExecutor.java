@@ -44,7 +44,7 @@ this.threadPoolName = threadPoolName;
 	 */
 	@Override
 	protected void beforeExecute(Thread t, Runnable r) {
-		if (t.getName().startsWith("pool--")) {
+		if (t.getName().startsWith("pool-")) {
 			t.setName(t.getName().replaceAll("pool-\\d", this.threadPoolName));
 		}
 	}

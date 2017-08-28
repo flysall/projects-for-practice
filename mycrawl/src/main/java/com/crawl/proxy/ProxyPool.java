@@ -44,6 +44,7 @@ public class ProxyPool {
                 proxyMap.put("http://www.66ip.cn/areaindex_" + j + "/" + i + ".html", Ip66ProxyListPageParser.class);
             }
         }
+    }
 }
 
 

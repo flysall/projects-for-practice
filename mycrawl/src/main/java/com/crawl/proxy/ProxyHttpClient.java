@@ -80,7 +80,7 @@ public class ProxyHttpClient extends AbstractHttpClient {
 					usableProxyCount++;
 				}
 			}
-			logger.info("反序列化成功, " + proxyArray.length + "个");
+			logger.info("反序列化成功, " + proxyArray.length + "个代理， 可用代理" + usableProxyCount + "个");
 		} catch (Exception e) {
 			logger.warn("反序列proxy失败");
 		}
@@ -95,6 +95,7 @@ public class ProxyHttpClient extends AbstractHttpClient {
 			public void run() {
 				while (true) {
 					for (String url : ProxyPool.proxyMap.keySet()) {
+						System.out.print("bug: " + url + "\n");
 						// 首次本机直接下载代理页面
 						proxyDownloadThreadExecutor.execute(new ProxyPageTask(url, false));
 						try {

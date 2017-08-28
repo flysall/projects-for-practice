@@ -207,7 +207,7 @@ public class HttpClientUtil {
 	 * 反序列化对象
 	 */
 	public static Object deserializeObject(String path) throws Exception {
-		// InputStream fis = HttpClientUtil.class.getResourceAsStream(name);
+//		InputStream fis = HttpClientUtil.class.getResourceAsStream(name);
 		File file = new File(path);
 		InputStream fis = new FileInputStream(file);
 		ObjectInputStream ois = null;

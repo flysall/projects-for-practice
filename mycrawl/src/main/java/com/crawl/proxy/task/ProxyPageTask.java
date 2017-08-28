@@ -43,6 +43,7 @@ public class ProxyPageTask implements Runnable{
 	}
 	public void run(){
 		long requestStartTime = System.currentTimeMillis();
+		System.out.println("the request tiem is " + requestStartTime);
 		HttpGet tempRequest = null;
 		try{
 			Page page = null;
