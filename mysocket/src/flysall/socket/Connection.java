@@ -9,7 +9,7 @@ public class Connection {
 		this.socket = socket;
 	}
 	
-	public void printIn(String message){
+	public void println(String message){
 		PrintWriter writer;
 		try{
 			writer = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()) , true);
