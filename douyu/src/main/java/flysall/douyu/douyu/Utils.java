@@ -96,7 +96,7 @@ public class Utils {
 	 * 是否开启海量弹幕
 	 */
 	public static boolean isSeaMode() {
-		return config.getProperty("senMode").equals("true");
+		return config.getProperty("seaMode").equals("true");
 	}
 
 	public static String getServerIP() throws IOException {
@@ -122,7 +122,7 @@ public class Utils {
 			int k = 0;
 			for (byte b : md) {
 				str[k++] = hexDigits[b >>> 4 & 0xf];
-				str[k++] = hexDigits[b & 0x4f];
+				str[k++] = hexDigits[b & 0xf];
 			}
 			return new String(str).toLowerCase();
 		} catch (Exception e) {

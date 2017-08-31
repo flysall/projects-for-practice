@@ -31,14 +31,14 @@ public class Crawl extends Thread {
 		System.out.println("从服务器(" + ip + ":" + port + ")获取弹幕服务器");
 		MessageHandler messageHandler = new MessageHandler(socket);
 
-		String s = "type@=loginreq/username@=/ct@=0/password@=/roomid@=" + Utils.getRoomId() + "/";
-		String time = String.valueOf(System.currentTimeMillis() / 1000);
-		String uuid = UUID.randomUUID().toString().replaceAll("-", "").toUpperCase();
-		String rt = "rt@=" + time + "/";
-		String devid = "devid@=" + uuid + "/";
-		String vk = "vk@=" + Utils.md5(time + "7oE9nPEG9xXV69phU31FYCLUagKeYtsF" + uuid) + "/";
-		String ver = "ver@=20150929/";
-		String content = s + devid + rt + vk + ver;
+        String s = "type@=loginreq/username@=/ct@=0/password@=/roomid@=" + Utils.getRoomId() + "/";
+        String time = String.valueOf(System.currentTimeMillis() / 1000);
+        String uuid = UUID.randomUUID().toString().replaceAll("-","").toUpperCase();
+        String rt = "rt@=" + time + "/";
+        String devid = "devid@=" + uuid + "/";
+        String vk = "vk@=" + Utils.md5(time + "7oE9nPEG9xXV69phU31FYCLUagKeYtsF" + uuid) + "/";
+        String ver = "ver@=20150929/";
+        String content = s + devid + rt + vk + ver;
 
 		messageHandler.send(content);
 		// 准备接收数据包
@@ -46,7 +46,7 @@ public class Crawl extends Thread {
 			byte[] bytes = messageHandler.read();
 			String msg = new String(Arrays.copyOfRange(bytes, 8, bytes.length));
 			if (msg.startsWith("type@=msgrepeaterlist")) {
-				Pattern p = Pattern.compile("@Asip(.*?)@AS@S");
+				Pattern p = Pattern.compile("@ASip(.*?)@AS@S");
 				Matcher m = p.matcher(msg);
 
 				while (m.find()) {
