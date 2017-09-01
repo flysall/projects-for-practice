@@ -93,6 +93,7 @@ public class Crawl extends Thread {
 			e.printStackTrace();
 		}
 
+		
 		try {
 			init();
 			login();
@@ -100,8 +101,15 @@ public class Crawl extends Thread {
 			while (true) {
 				byte[] bytes = messageHandler.read();
 				String msg = new String(Arrays.copyOfRange(bytes, 8, bytes.length));
-				System.out.println(msg);
-				Thread.sleep(1);
+				if(msg.startsWith("type@=chatmsg")){
+					String nickname = msg.split("nn@=",2)[1].split("/",2)[0];
+					String content = msg.split("txt@=", 2)[1].split("/",2)[0];
+					System.out.println("[" + nickname + "]" + content);
+				} 
+/*				else {
+					System.out.println(msg);
+				}
+*/				Thread.sleep(1);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
