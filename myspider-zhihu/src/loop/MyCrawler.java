@@ -47,11 +47,18 @@ public class MyCrawler {
 			while (personValue.hasNext()) {
 				nextURL = bURL + personValue.next().get(1) + eURL; // get(1)获得urltoke,
 																	// 参考Follow
+				List<Object> list = personMap.get(personkey.next());
+				System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>");
+				System.out.println("Information of User: " + list.get(0).toString());
+				System.out.println("Name: " + list.get(0).toString());
+				System.out.println("Gender: " + (list.get(1).toString().equals("1") ? "man" : "woman"));
+				System.out.println("FollowCount: " + list.get(5));
+				System.out.println("------------------");
 				LinkQueue.addUnvisited(nextURL);
 			}
 		}
 	}
-
+	//调试到Seed.getCookie
 	public static void main(String[] args) {
 		MyCrawler crawl = new MyCrawler("18846127825", "1514301jzc18");
 		crawl.crawling("https://www.zhihu.com/people/flysall/following");

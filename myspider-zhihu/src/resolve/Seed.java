@@ -124,17 +124,22 @@ public class Seed {
 				cookie += ";";
 			}
 		}
-
+		
+		System.out.println(cookie);
 		String[] cookies = cookie.split(";");
 		for (String c : cookies) {
+			System.out.println(c);
 			c = c.trim();
+			System.out.println(c);
 			cookieMap.put(c.split("=")[0],
 					c.split("=").length == 1 ? "" : (c.split("=").length == 2 ? c.split("=")[1] : c.split("=", 2)[1]));// 最多分割2-1次
 		}
 		String cookiesTmp = "";
 		for (String key : cookieMap.keySet()) {
+			System.out.println(key);
 			cookiesTmp += key + "=" + cookieMap.get(key) + ";";
 		}
+		System.out.println(cookiesTmp);
 		return cookiesTmp.substring(0, cookiesTmp.length() - 2);
 	}
 

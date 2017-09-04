@@ -78,6 +78,7 @@ public class Follow {
 			}
 			for (int j = 0; j < 20 && j < followingNumber - 20 * i; j++) {
 				personInfo = new ArrayList<>();
+				System.out.println(jsonContent);
 				JSONObject jsonObject = JSON.parseObject(jsonContent);
 				JSONArray object = jsonObject.getJSONArray("data");
 				JSONObject preName = object.getJSONObject(j);
@@ -89,6 +90,7 @@ public class Follow {
 					headline = headline.replaceAll("<a.*</a>", "(链接)");
 					Object follower_count = preName.get("follower_count");
 					Object answer_count = preName.get("answer_count");
+					personInfo.add(name);
 					personInfo.add(gender);
 					personInfo.add(url_token);
 					personInfo.add(headline);
