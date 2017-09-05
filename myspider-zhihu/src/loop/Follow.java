@@ -78,24 +78,35 @@ public class Follow {
 			}
 			for (int j = 0; j < 20 && j < followingNumber - 20 * i; j++) {
 				personInfo = new ArrayList<>();
-				System.out.println(jsonContent);
 				JSONObject jsonObject = JSON.parseObject(jsonContent);
 				JSONArray object = jsonObject.getJSONArray("data");
 				JSONObject preName = object.getJSONObject(j);
 				if (preName != null) {
+					Object id = preName.get("id");
 					Object name = preName.get("name");
 					Object gender = preName.get("gender");
+					Object user_type = preName.get("user_type");
+					Object user_url = preName.get("url");
+					Object avatar_url = preName.get("avatar_url");
+					
 					Object url_token = preName.get("url_token");
 					String headline = (String) preName.get("headline");
 					headline = headline.replaceAll("<a.*</a>", "(链接)");
 					Object follower_count = preName.get("follower_count");
+					Object is_followed = preName.get("is_followed");
 					Object answer_count = preName.get("answer_count");
+					Object articles_count = preName.get("articles_count");
+					personInfo.add(id);
 					personInfo.add(name);
 					personInfo.add(gender);
+					personInfo.add(user_type);
+					personInfo.add(user_url);
 					personInfo.add(url_token);
 					personInfo.add(headline);
 					personInfo.add(follower_count);
+					personInfo.add(is_followed);
 					personInfo.add(answer_count);
+					personInfo.add(articles_count);
 					person.put(name, personInfo);
 				}
 			}

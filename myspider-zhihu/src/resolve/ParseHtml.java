@@ -21,21 +21,26 @@ public class ParseHtml {
 	 */
 	public static List<String> basicInfo(String html) {
 		List<String> numberList = new ArrayList<>();
-		Document doc = Jsoup.parse(html);
-		Elements elements = doc.getElementsByClass("NumberBoard-value");
-		String name = doc.getElementsByClass("Tabs-link").first().attr("href");
-		Pattern pattern = Pattern.compile("/");
-		Matcher match = pattern.matcher(name);
-		int number = 0;
-		// 找到第二个"/"的位置
-		while (match.find()) {
-			number++;
-			if (number == 2)
-				break;
-		}
-		numberList.add(name.substring(match.start(), name.indexOf("/activities")));
-		for (Element e : elements) {
-			numberList.add(e.text());
+		if(html != null){
+			Document doc = Jsoup.parse(html);
+			Elements elements = doc.getElementsByClass("NumberBoard-value");
+			String name = doc.getElementsByClass("Tabs-link").first().attr("href");
+			Pattern pattern = Pattern.compile("/");
+			Matcher match = pattern.matcher(name);
+			int number = 0;
+			// 找到第二个"/"的位置
+			while (match.find()) {
+				number++;
+				if (number == 2)
+					break;
+			}
+			numberList.add(name.substring(match.start(), name.indexOf("/activities")));
+			for (Element e : elements) {
+				numberList.add(e.text());
+			}
+		} else {
+			System.out.println("==> That's all, Thank you!");
+			System.exit(0);
 		}
 		return numberList;
 	}

@@ -125,21 +125,16 @@ public class Seed {
 			}
 		}
 		
-		System.out.println(cookie);
 		String[] cookies = cookie.split(";");
 		for (String c : cookies) {
-			System.out.println(c);
 			c = c.trim();
-			System.out.println(c);
 			cookieMap.put(c.split("=")[0],
 					c.split("=").length == 1 ? "" : (c.split("=").length == 2 ? c.split("=")[1] : c.split("=", 2)[1]));// 最多分割2-1次
 		}
 		String cookiesTmp = "";
 		for (String key : cookieMap.keySet()) {
-			System.out.println(key);
 			cookiesTmp += key + "=" + cookieMap.get(key) + ";";
 		}
-		System.out.println(cookiesTmp);
 		return cookiesTmp.substring(0, cookiesTmp.length() - 2);
 	}
 
@@ -172,10 +167,11 @@ public class Seed {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		System.out.println("请输入验证码:");
 		Scanner sc = new Scanner(System.in);
 		String captcha = sc.next();
+		System.out.println("==> Please wait again!");
 		return captcha;
 	}
 
