@@ -1,5 +1,10 @@
 package flysall.socket.example;
 
-public class EchoHandler {
+import flysall.socket.*;
 
+public class EchoHandler implements MessageHandler{
+	@Override
+	public void onReceive(Connection connection, String message){
+		connection.println(message);
+	}
 }
