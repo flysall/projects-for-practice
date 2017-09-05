@@ -107,33 +107,33 @@ public class ZhiHuHttpClient extends AbstractHttpClient implements IHttpClient {
 	/**
 	 * 初始化authorization
 	 */
-	 private String initAuthorization(){
-		 logger.info("初始化authorization中");
-		 String content = null;
-		 GeneralPageTask generalPageTask = new GeneralPageTask(Config.startURL, true);
-		 generalPageTask.run();
-		 content = generalPageTask.getPage().getHtml();
-		 Pattern pattern = Pattern.compile("https://static\\.zhihu.com/heifetz/main\\.app\\.([0-9][a-a])*\\.js");
-		 Matcher matcher = pattern.matcher(content);
-		 String jsSrc = null;
-		 if(matcher.find()){
-			 jsSrc = matcher.group(0);
-		 } else{
-			 throw new RuntimeException("not find java script url");
-		 }
-		 String jsContent = null;
-		 GeneralPageTask jsPageTask = new GeneralPageTask(jsSrc, true);
-		 jsPageTask.run();
-		 jsContent = jsPageTask.getPage().getHtml();
-		 pattern = Pattern.compile("CLIENT_ALIAS = \"(([0-9]|[a-z])*)\"");
-		 matcher = pattern.matcher(jsContent);
-		 if(matcher.find()){
-			 String authorization = matcher.group(1);
-			 logger.info("初始化authorization完成");
-			 return authorization;
-		 }
-		 throw new RuntimeException("not get authorization");
-	 }
+	private String initAuthorization() {
+		logger.info("初始化authorization中");
+		String content = null;
+		GeneralPageTask generalPageTask = new GeneralPageTask(Config.startURL, true);
+		generalPageTask.run();
+		content = generalPageTask.getPage().getHtml();
+		Pattern pattern = Pattern.compile("https://static\\.zhihu.com/heifetz/main\\.app\\.([0-9][a-a])*\\.js");
+		Matcher matcher = pattern.matcher(content);
+		String jsSrc = null;
+		if (matcher.find()) {
+			jsSrc = matcher.group(0);
+		} else {
+			throw new RuntimeException("not find java script url");
+		}
+		String jsContent = null;
+		GeneralPageTask jsPageTask = new GeneralPageTask(jsSrc, true);
+		jsPageTask.run();
+		jsContent = jsPageTask.getPage().getHtml();
+		pattern = Pattern.compile("CLIENT_ALIAS = \"(([0-9]|[a-z])*)\"");
+		matcher = pattern.matcher(jsContent);
+		if (matcher.find()) {
+			String authorization = matcher.group(1);
+			logger.info("初始化authorization完成");
+			return authorization;
+		}
+		throw new RuntimeException("not get authorization");
+	}
 
 	public static String getAuthorization() {
 		return authorization;
