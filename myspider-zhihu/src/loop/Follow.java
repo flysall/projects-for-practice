@@ -59,7 +59,6 @@ public class Follow {
 		person = new LinkedHashMap<>();
 		if (count == 0) {
 			cookie = seed.getCookie("https://www.zhihu.com/login/phone_num");
-			System.out.println(cookie);
 			count++;
 		}
 		// 网址列表，包含了用户关注的人的所有信息
@@ -71,10 +70,14 @@ public class Follow {
 			String jsonContent = null;
 			try {
 				response = httpClient.execute(getMethod);
-				if (response.getStatusLine().getStatusCode() == 200)
+				if (response.getStatusLine().getStatusCode() == 200){
 					if (response.getEntity() != null) {
 						jsonContent = EntityUtils.toString(response.getEntity());
 					}
+				} else{
+					System.out.println("==> The cookie has failed, please delete it and run again");
+					System.exit(0);
+				}
 			} catch (IOException | ParseException e) {
 				e.printStackTrace();
 			}

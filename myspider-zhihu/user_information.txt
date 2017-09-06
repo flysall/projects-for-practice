@@ -4,8 +4,8 @@ Id: c7a36c9c3dbb8d9694f284b31a67d40c
 Name: 小仙女喵喵喵
 Gender: woman
 UserType: people
-Follower count: 467
-Answer count: 18
+Follower count: 472
+Answer count: 19
 Article count: 0
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -35,7 +35,7 @@ Name: 欲三更
 Gender: man
 UserType: people
 Follower count: 163491
-Answer count: 348
+Answer count: 349
 Article count: 11
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -54,7 +54,7 @@ Id: 39539170ee9f3e63ee79bb63a4a31bcc
 Name: 陈兰香
 Gender: woman
 UserType: people
-Follower count: 250111
+Follower count: 250139
 Answer count: 201
 Article count: 5
 ------------------
@@ -74,7 +74,7 @@ Id: 71637fe077b9a2d7be320e2800ccd818
 Name: 姚冬
 Gender: man
 UserType: people
-Follower count: 81997
+Follower count: 82039
 Answer count: 684
 Article count: 13
 ------------------
@@ -94,9 +94,9 @@ Id: b9e2346c17befe5d0fa109a9f1ab31b5
 Name: 牛客网
 Gender: woman
 UserType: organization
-Follower count: 13300
-Answer count: 33
-Article count: 35
+Follower count: 13340
+Answer count: 34
+Article count: 36
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: Dr.Yan
@@ -104,7 +104,7 @@ Id: 65985937aaa266631270c0cd4293494b
 Name: Dr.Yan
 Gender: man
 UserType: people
-Follower count: 20668
+Follower count: 20673
 Answer count: 177
 Article count: 6
 ------------------
@@ -134,7 +134,7 @@ Id: 2528c0d822893dd5112b57b813ed47e7
 Name: Accelerator
 Gender: man
 UserType: people
-Follower count: 1339
+Follower count: 1340
 Answer count: 137
 Article count: 13
 ------------------
@@ -144,7 +144,7 @@ Id: 5efa3bc3e8f37624e03a34850e95f003
 Name: 薛定谔的猫
 Gender: man
 UserType: people
-Follower count: 496
+Follower count: 499
 Answer count: 307
 Article count: 0
 ------------------
@@ -154,7 +154,7 @@ Id: 60cd9664ef2f13d8d5ddba060ef35a8a
 Name: 灵剑
 Gender: man
 UserType: people
-Follower count: 17366
+Follower count: 17370
 Answer count: 2282
 Article count: 29
 ------------------
@@ -164,7 +164,7 @@ Id: 71c088ecfddbec73955e63facf5facd7
 Name: 刘看山城市冰屋
 Gender: woman
 UserType: organization
-Follower count: 18193
+Follower count: 18198
 Answer count: 33
 Article count: 59
 ------------------
@@ -184,7 +184,7 @@ Id: ba4db02667f457a477aec36121933b97
 Name: Haojun
 Gender: man
 UserType: people
-Follower count: 61404
+Follower count: 61410
 Answer count: 76
 Article count: 1
 ------------------
@@ -194,7 +194,7 @@ Id: b228918246a65d9e16d5c0f6a8329205
 Name: 熊辰炎
 Gender: man
 UserType: people
-Follower count: 43329
+Follower count: 43330
 Answer count: 261
 Article count: 1
 ------------------
@@ -204,8 +204,8 @@ Id: 142f5e35a791df3b07621bba159e1ceb
 Name: 何静
 Gender: woman
 UserType: people
-Follower count: 47350
-Answer count: 94
+Follower count: 47359
+Answer count: 93
 Article count: 2
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -214,7 +214,7 @@ Id: 14b6757e3ca6cc4fd761235c6886e5af
 Name: 王绎心
 Gender: man
 UserType: people
-Follower count: 2073
+Follower count: 2078
 Answer count: 453
 Article count: 19
 ------------------
@@ -234,7 +234,7 @@ Id: 33fbe85d1ae6caaff0619fc0fd83d622
 Name: 爱笑的逗逼
 Gender: man
 UserType: people
-Follower count: 927
+Follower count: 928
 Answer count: 273
 Article count: 9
 ------------------
@@ -244,7 +244,7 @@ Id: 60a7e46658685c1d89158db51ee83384
 Name: 丁香花开
 Gender: woman
 UserType: people
-Follower count: 1385
+Follower count: 1386
 Answer count: 318
 Article count: 0
 ------------------
@@ -264,9 +264,9 @@ Id: dcadc325853df0c157860fd3c47982b7
 Name: LinkedIn领英中国
 Gender: woman
 UserType: organization
-Follower count: 17662
+Follower count: 17669
 Answer count: 53
-Article count: 7
+Article count: 8
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: LuvDDDD
@@ -274,7 +274,7 @@ Id: 99abc1bf6f7c61cd76a0a8f4ef9657d5
 Name: LuvDDDD
 Gender: woman
 UserType: people
-Follower count: 81611
+Follower count: 81623
 Answer count: 271
 Article count: 7
 ------------------
@@ -284,8 +284,8 @@ Id: 626dca92ceafc3f5aebfe06d8f0d1253
 Name: 从不毒舌可达鸭
 Gender: man
 UserType: people
-Follower count: 28636
-Answer count: 2674
+Follower count: 28637
+Answer count: 2675
 Article count: 20
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -304,8 +304,8 @@ Id: fd51f37ac298387052e18e73158e3187
 Name: 无色方糖
 Gender: woman
 UserType: people
-Follower count: 185578
-Answer count: 120
+Follower count: 185620
+Answer count: 121
 Article count: 92
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -324,8 +324,8 @@ Id: 29448cc28212a543bea56b9492f82e25
 Name: 程墨Morgan
 Gender: man
 UserType: people
-Follower count: 14530
-Answer count: 1118
+Follower count: 14543
+Answer count: 1119
 Article count: 19
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -344,7 +344,7 @@ Id: 217831fe1e5cc632f1aeb386eb984435
 Name: 杨勃 (阿北)
 Gender: woman
 UserType: people
-Follower count: 129863
+Follower count: 129860
 Answer count: 38
 Article count: 0
 ------------------
@@ -374,7 +374,7 @@ Id: bd53ed80abcf49474092ca44a1636db4
 Name: 云大学小编
 Gender: woman
 UserType: people
-Follower count: 5223
+Follower count: 5224
 Answer count: 23
 Article count: 36
 ------------------
@@ -384,7 +384,7 @@ Id: dd194e4e29e3cac134a09ba870278dd1
 Name: 科言君
 Gender: woman
 UserType: people
-Follower count: 24093
+Follower count: 24096
 Answer count: 28
 Article count: 0
 ------------------
@@ -394,9 +394,9 @@ Id: 53fa7c2fb1fcade1f2eb8e25e10e0f84
 Name: 共青团中央
 Gender: man
 UserType: people
-Follower count: 183132
+Follower count: 184146
 Answer count: 218
-Article count: 62
+Article count: 63
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: 吴辰晔
@@ -404,7 +404,7 @@ Id: e2d3d69c70ee9b308c288d8ae48dde04
 Name: 吴辰晔
 Gender: man
 UserType: people
-Follower count: 4695
+Follower count: 4718
 Answer count: 39
 Article count: 3
 ------------------
@@ -424,7 +424,7 @@ Id: 63cdb218d3018e28fd9b32b51e1ee4da
 Name: 腾天
 Gender: man
 UserType: people
-Follower count: 65584
+Follower count: 65594
 Answer count: 1032
 Article count: 20
 ------------------
@@ -454,7 +454,7 @@ Id: 9dd9dacb3fe9035c0353d2008452c2c5
 Name: 迪迦奥特曼
 Gender: man
 UserType: people
-Follower count: 76346
+Follower count: 76357
 Answer count: 59
 Article count: 0
 ------------------
@@ -464,7 +464,7 @@ Id: 6c143569c6fce566e9a9a109455578a4
 Name: 花潇
 Gender: woman
 UserType: people
-Follower count: 1034
+Follower count: 1035
 Answer count: 16
 Article count: 3
 ------------------
@@ -474,7 +474,7 @@ Id: 8449cec11c955d78f915eb64e26d4e52
 Name: 纯纯
 Gender: man
 UserType: people
-Follower count: 6240
+Follower count: 6239
 Answer count: 394
 Article count: 0
 ------------------
@@ -484,8 +484,8 @@ Id: ef070aacceb3bb1f51e4744c6d018a28
 Name: 伊利丹·怒风
 Gender: man
 UserType: people
-Follower count: 4313
-Answer count: 97
+Follower count: 4316
+Answer count: 90
 Article count: 25
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -494,7 +494,7 @@ Id: a3d1df1f61616ebdac9e2d71db5800bd
 Name: 周召
 Gender: man
 UserType: people
-Follower count: 109057
+Follower count: 109083
 Answer count: 380
 Article count: 8
 ------------------
@@ -544,7 +544,7 @@ Id: 09edf3249c2630836002e4ea44b6ae4b
 Name: 施子怡
 Gender: woman
 UserType: people
-Follower count: 31535
+Follower count: 31539
 Answer count: 36
 Article count: 1
 ------------------
@@ -574,7 +574,7 @@ Id: 3ec3b166992a5a90a1083945d2490d38
 Name: 贺师俊
 Gender: man
 UserType: people
-Follower count: 39061
+Follower count: 39069
 Answer count: 1029
 Article count: 18
 ------------------
@@ -634,7 +634,7 @@ Id: 0340088f370becffa814797ee3d2d6bf
 Name: Patrick Zhang
 Gender: man
 UserType: people
-Follower count: 146713
+Follower count: 146927
 Answer count: 680
 Article count: 149
 ------------------
@@ -654,7 +654,7 @@ Id: 246e6cf44e94cefbf4b959cb5042bc91
 Name: 于欣烈
 Gender: man
 UserType: people
-Follower count: 158820
+Follower count: 158852
 Answer count: 401
 Article count: 164
 ------------------
@@ -664,7 +664,7 @@ Id: 491b1dc31ed6c376323c2fe5f643f650
 Name: 王诺诺
 Gender: woman
 UserType: people
-Follower count: 358965
+Follower count: 358989
 Answer count: 246
 Article count: 10
 ------------------
@@ -674,7 +674,7 @@ Id: 9d785a6676f0bd2e64227611faa45ba1
 Name: Root
 Gender: woman
 UserType: people
-Follower count: 548
+Follower count: 549
 Answer count: 2
 Article count: 0
 ------------------
@@ -684,8 +684,8 @@ Id: b8d0ce82cbb55642c0d5f2090c584ad0
 Name: 沈万马
 Gender: man
 UserType: people
-Follower count: 10804
-Answer count: 480
+Follower count: 10805
+Answer count: 482
 Article count: 0
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -695,7 +695,7 @@ Name: 叫自己余淮的Jack
 Gender: man
 UserType: people
 Follower count: 164
-Answer count: 43
+Answer count: 44
 Article count: 3
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -714,7 +714,7 @@ Id: 9efbf8046bca659721129b4104111590
 Name: 北冥乘海生
 Gender: woman
 UserType: people
-Follower count: 29913
+Follower count: 29922
 Answer count: 99
 Article count: 44
 ------------------
@@ -724,7 +724,7 @@ Id: 6bfad8199c976be84f00a7bdc078d4f5
 Name: 苏莉安
 Gender: woman
 UserType: people
-Follower count: 166248
+Follower count: 166264
 Answer count: 451
 Article count: 29
 ------------------
@@ -754,7 +754,7 @@ Id: ed9065d224f51b76296689517d86be78
 Name: 机器人夏先生1号
 Gender: man
 UserType: people
-Follower count: 751
+Follower count: 752
 Answer count: 261
 Article count: 9
 ------------------
@@ -764,8 +764,8 @@ Id: 8d4b63e3e569c6ee3ffef70e75f48517
 Name: 十号胖狐狸
 Gender: man
 UserType: people
-Follower count: 67215
-Answer count: 1361
+Follower count: 67259
+Answer count: 1362
 Article count: 37
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -814,7 +814,7 @@ Id: 03374842b0b183eca0a500d5a95402ae
 Name: 何苦
 Gender: woman
 UserType: people
-Follower count: 422
+Follower count: 421
 Answer count: 14
 Article count: 0
 ------------------
@@ -824,7 +824,7 @@ Id: eb271ac52f1730cdf0725f627c013f14
 Name: 中科院之声
 Gender: woman
 UserType: organization
-Follower count: 78398
+Follower count: 78416
 Answer count: 19
 Article count: 147
 ------------------
@@ -834,7 +834,7 @@ Id: b753e74b62e192ff7a9a3a6f0132bb22
 Name: 田雅夫
 Gender: man
 UserType: people
-Follower count: 5056
+Follower count: 5055
 Answer count: 180
 Article count: 8
 ------------------
@@ -864,8 +864,8 @@ Id: e45f61d081284b62a32801f0e52fcc85
 Name: 朋克雪球兔
 Gender: man
 UserType: people
-Follower count: 1906
-Answer count: 262
+Follower count: 1907
+Answer count: 263
 Article count: 7
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -884,7 +884,7 @@ Id: 088b46d71c7972b96cf53890871eac81
 Name: 小岛美奈子
 Gender: woman
 UserType: people
-Follower count: 7575
+Follower count: 7583
 Answer count: 95
 Article count: 16
 ------------------
@@ -914,7 +914,7 @@ Id: 11c4242fd92613a7f85ad9fff60c29c9
 Name: Cat Chen
 Gender: man
 UserType: people
-Follower count: 232359
+Follower count: 232360
 Answer count: 359
 Article count: 14
 ------------------
@@ -944,14 +944,14 @@ Id: 8a96e992af0f1f4880889583d22bab09
 Name: 宝术
 Gender: man
 UserType: people
-Follower count: 2915
+Follower count: 2916
 Answer count: 400
 Article count: 1
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
-Information of User: 王不贱
+Information of User: 不贱
 Id: fd542732e117d7021df8181ee847188c
-Name: 王不贱
+Name: 不贱
 Gender: man
 UserType: people
 Follower count: 3451
@@ -974,8 +974,8 @@ Id: 5cc7a463c19fc2c9443bd64e3e192c18
 Name: 江踏歌
 Gender: man
 UserType: people
-Follower count: 55034
-Answer count: 402
+Follower count: 55173
+Answer count: 404
 Article count: 65
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -994,8 +994,8 @@ Id: ea85c9f8f7f88dd85d5bc66322fd0287
 Name: 韩迪
 Gender: man
 UserType: people
-Follower count: 61557
-Answer count: 794
+Follower count: 61584
+Answer count: 795
 Article count: 36
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1004,7 +1004,7 @@ Id: fe7751cabac3c78024ea293e6db3b33a
 Name: 吴清缘
 Gender: man
 UserType: people
-Follower count: 200424
+Follower count: 200440
 Answer count: 118
 Article count: 25
 ------------------
@@ -1014,7 +1014,7 @@ Id: c5198d4e9c0145aee04dd53cc6590edd
 Name: 徐飞
 Gender: man
 UserType: people
-Follower count: 26748
+Follower count: 26755
 Answer count: 224
 Article count: 7
 ------------------
@@ -1034,7 +1034,7 @@ Id: b9dc73bfdd3b51af128b800d2d1a8bd3
 Name: 小失
 Gender: man
 UserType: people
-Follower count: 1761
+Follower count: 1760
 Answer count: 136
 Article count: 0
 ------------------
@@ -1074,7 +1074,7 @@ Id: 0251012c87c2d3f56ac34de7d71cdcbc
 Name: 帅气可爱魔理沙
 Gender: woman
 UserType: people
-Follower count: 6355
+Follower count: 6356
 Answer count: 17
 Article count: 26
 ------------------
@@ -1084,7 +1084,7 @@ Id: f5f6ecc5d43ab00a5ad3f3d9ad8a61fe
 Name: 王納米
 Gender: man
 UserType: people
-Follower count: 39527
+Follower count: 39528
 Answer count: 201
 Article count: 2
 ------------------
@@ -1094,7 +1094,7 @@ Id: 9dc46aa6570ad50f998d93e5e63049de
 Name: xlzd
 Gender: man
 UserType: people
-Follower count: 19787
+Follower count: 19793
 Answer count: 184
 Article count: 48
 ------------------
@@ -1114,7 +1114,7 @@ Id: 831bddaa78996b9893bf5cef2fe54a74
 Name: 路人李志强
 Gender: man
 UserType: people
-Follower count: 24951
+Follower count: 24953
 Answer count: 36
 Article count: 14
 ------------------
@@ -1134,7 +1134,7 @@ Id: 44faf17ff5f5a4ccc4cf9bda47de8da2
 Name: 冯东
 Gender: man
 UserType: people
-Follower count: 163122
+Follower count: 163119
 Answer count: 2241
 Article count: 0
 ------------------
@@ -1174,7 +1174,7 @@ Id: 8635a46c137bb5f6c4b729025a07e3d5
 Name: Intopass
 Gender: man
 UserType: people
-Follower count: 3691
+Follower count: 3690
 Answer count: 581
 Article count: 0
 ------------------
@@ -1184,9 +1184,9 @@ Id: 65b52731faea3de2e983890f3f3fffa1
 Name: 阿里云云栖社区
 Gender: woman
 UserType: organization
-Follower count: 35823
-Answer count: 204
-Article count: 295
+Follower count: 35840
+Answer count: 206
+Article count: 297
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: 硅谷老实人
@@ -1204,9 +1204,9 @@ Id: 07ac311b76fccb8247159979c0d5d118
 Name: 未来个体
 Gender: man
 UserType: people
-Follower count: 2801
+Follower count: 2803
 Answer count: 0
-Article count: 1
+Article count: 2
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: 罗宸
@@ -1224,7 +1224,7 @@ Id: a6fecae6ca1389079dbb63d0b4368eba
 Name: 海纳
 Gender: man
 UserType: people
-Follower count: 7089
+Follower count: 7106
 Answer count: 116
 Article count: 109
 ------------------
@@ -1264,7 +1264,7 @@ Id: 710eba6a35a79b11101c571177962ffd
 Name: SimonS
 Gender: man
 UserType: people
-Follower count: 26135
+Follower count: 26148
 Answer count: 204
 Article count: 19
 ------------------
@@ -1274,7 +1274,7 @@ Id: 596c0a5fdd9b36cea06bac348d418824
 Name: 顾轶灵
 Gender: man
 UserType: people
-Follower count: 123917
+Follower count: 123929
 Answer count: 730
 Article count: 32
 ------------------
@@ -1284,7 +1284,7 @@ Id: c67d30567c1ebd6c36ca4352d2c716df
 Name: 高天
 Gender: man
 UserType: people
-Follower count: 48830
+Follower count: 48845
 Answer count: 802
 Article count: 5
 ------------------
@@ -1294,7 +1294,7 @@ Id: 85cfb575f21adc3a0bf8f70ebe42798b
 Name: 哲成功
 Gender: woman
 UserType: people
-Follower count: 343
+Follower count: 342
 Answer count: 0
 Article count: 0
 ------------------
@@ -1304,7 +1304,7 @@ Id: dcddea61834f6b2dcb515f393fe29575
 Name: bhuztez
 Gender: man
 UserType: people
-Follower count: 17109
+Follower count: 17108
 Answer count: 441
 Article count: 106
 ------------------
@@ -1334,7 +1334,7 @@ Id: 06f3b1c891d0d504eea8af883150b497
 Name: 冷哲
 Gender: man
 UserType: people
-Follower count: 248971
+Follower count: 248981
 Answer count: 690
 Article count: 5
 ------------------
@@ -1344,7 +1344,7 @@ Id: 31a59a6327454bf530f48cec3d0e6a44
 Name: 林声巧
 Gender: man
 UserType: people
-Follower count: 2236
+Follower count: 2237
 Answer count: 64
 Article count: 1
 ------------------
@@ -1364,7 +1364,7 @@ Id: 4d01a1609e09eb06ab5a82c2c3db3cc9
 Name: 王丹青
 Gender: woman
 UserType: people
-Follower count: 9304
+Follower count: 9305
 Answer count: 7
 Article count: 2
 ------------------
@@ -1374,8 +1374,8 @@ Id: 1226dd3baa23701c8bb28f60e6904a7e
 Name: 邹昕
 Gender: man
 UserType: people
-Follower count: 43614
-Answer count: 70
+Follower count: 43676
+Answer count: 71
 Article count: 9
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1404,7 +1404,7 @@ Id: acb9b6ed9c6bc225995cdeb68dd7b962
 Name: 孤单彼岸
 Gender: man
 UserType: people
-Follower count: 266
+Follower count: 267
 Answer count: 16
 Article count: 0
 ------------------
@@ -1414,7 +1414,7 @@ Id: 772bfccd2f751a67f85509b33b9ecd88
 Name: 傅渥成
 Gender: man
 UserType: people
-Follower count: 126160
+Follower count: 126171
 Answer count: 360
 Article count: 78
 ------------------
@@ -1424,8 +1424,8 @@ Id: 642e40fd8c4dcac56f20b3863e50d746
 Name: 孙志超
 Gender: woman
 UserType: people
-Follower count: 224654
-Answer count: 2440
+Follower count: 224676
+Answer count: 2442
 Article count: 648
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1434,7 +1434,7 @@ Id: 2307d4205a82926f3617da53423a049f
 Name: stormzhang
 Gender: man
 UserType: people
-Follower count: 39223
+Follower count: 39226
 Answer count: 384
 Article count: 102
 ------------------
@@ -1454,7 +1454,7 @@ Id: af5220816d1bbb32f315611ef05659d6
 Name: 孙志岗
 Gender: man
 UserType: people
-Follower count: 16075
+Follower count: 16080
 Answer count: 126
 Article count: 0
 ------------------
@@ -1464,7 +1464,7 @@ Id: 61ac6a1d8b37c7e39659b789b2e38013
 Name: 但识胡江
 Gender: man
 UserType: people
-Follower count: 448
+Follower count: 447
 Answer count: 350
 Article count: 1
 ------------------
@@ -1494,7 +1494,7 @@ Id: 26ad33fc8a2501ddb13ce7e1517dfdd6
 Name: 陈越姥姥
 Gender: woman
 UserType: people
-Follower count: 13993
+Follower count: 13997
 Answer count: 221
 Article count: 0
 ------------------
@@ -1524,8 +1524,8 @@ Id: 8b64165f04d96677d75dadd1e3f1fe81
 Name: 刘畅
 Gender: man
 UserType: people
-Follower count: 8908
-Answer count: 857
+Follower count: 8909
+Answer count: 859
 Article count: 0
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1535,7 +1535,7 @@ Name: tensorspace
 Gender: man
 UserType: people
 Follower count: 7646
-Answer count: 5696
+Answer count: 5698
 Article count: 25
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1544,7 +1544,7 @@ Id: ee7e749bb9ecbeb137001262247446a0
 Name: 美团点评技术团队
 Gender: woman
 UserType: organization
-Follower count: 19633
+Follower count: 19638
 Answer count: 5
 Article count: 67
 ------------------
@@ -1564,7 +1564,7 @@ Id: a183e874440b33cb80b2f1b86db6c708
 Name: 程杰
 Gender: man
 UserType: people
-Follower count: 6949
+Follower count: 6950
 Answer count: 102
 Article count: 10
 ------------------
@@ -1604,7 +1604,7 @@ Id: dbd99960bdbe2ba3e0517391214a8f07
 Name: 萧瑟
 Gender: man
 UserType: people
-Follower count: 4367
+Follower count: 4371
 Answer count: 284
 Article count: 10
 ------------------
@@ -1644,7 +1644,7 @@ Id: 68c2982dd93521afde9d151e2d1b76dc
 Name: 王家
 Gender: man
 UserType: people
-Follower count: 21584
+Follower count: 21585
 Answer count: 592
 Article count: 14
 ------------------
@@ -1714,8 +1714,8 @@ Id: df54fa7f021ba1b4eaabf533cebfec29
 Name: 刺猬君
 Gender: woman
 UserType: people
-Follower count: 762
-Answer count: 34
+Follower count: 763
+Answer count: 35
 Article count: 0
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1735,7 +1735,7 @@ Name: gmqq
 Gender: man
 UserType: people
 Follower count: 109
-Answer count: 81
+Answer count: 82
 Article count: 1
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -1764,7 +1764,7 @@ Id: 462c79c7d3e381705d35ebc135d256fc
 Name: 文兄
 Gender: man
 UserType: people
-Follower count: 27247
+Follower count: 27249
 Answer count: 335
 Article count: 64
 ------------------
@@ -1804,7 +1804,7 @@ Id: e1d29ad0526dd69e5fc10270c8a7d4fb
 Name: 灰色小熊
 Gender: woman
 UserType: people
-Follower count: 2326
+Follower count: 2324
 Answer count: 7
 Article count: 0
 ------------------
@@ -1824,7 +1824,7 @@ Id: 18b17051663bffa1f556049e8e885fba
 Name: 云舒
 Gender: man
 UserType: people
-Follower count: 115624
+Follower count: 115622
 Answer count: 80
 Article count: 45
 ------------------
@@ -1834,7 +1834,7 @@ Id: a3183ce0664ac190c8ad28147ba49b5a
 Name: shotgun
 Gender: man
 UserType: people
-Follower count: 60425
+Follower count: 60433
 Answer count: 794
 Article count: 8
 ------------------
@@ -1854,7 +1854,7 @@ Id: 980f8cb328df5d02d154c5e31a043d83
 Name: 周杰伦的小粉丝
 Gender: man
 UserType: people
-Follower count: 284076
+Follower count: 284074
 Answer count: 2
 Article count: 0
 ------------------
@@ -1864,7 +1864,7 @@ Id: 28bb2b6ff09a5072198351434ab2efff
 Name: yolfilm
 Gender: man
 UserType: people
-Follower count: 768300
+Follower count: 768344
 Answer count: 1618
 Article count: 0
 ------------------
@@ -1874,7 +1874,7 @@ Id: 99953853cc4219fabe8327301058357c
 Name: Fenng
 Gender: man
 UserType: people
-Follower count: 322950
+Follower count: 322973
 Answer count: 924
 Article count: 120
 ------------------
@@ -1884,7 +1884,7 @@ Id: 342d47c5da88fb45217f0685d261ce64
 Name: 肥肥猫
 Gender: man
 UserType: people
-Follower count: 442995
+Follower count: 443031
 Answer count: 316
 Article count: 13
 ------------------
@@ -1894,7 +1894,7 @@ Id: f35fcb19ea50373fc10f2219f4a12754
 Name: 马伯庸
 Gender: man
 UserType: people
-Follower count: 562676
+Follower count: 562717
 Answer count: 115
 Article count: 62
 ------------------
@@ -1904,7 +1904,7 @@ Id: ec57f56165fc5d88cef8e69816b456ba
 Name: 朱炫
 Gender: man
 UserType: people
-Follower count: 651068
+Follower count: 651134
 Answer count: 204
 Article count: 52
 ------------------
@@ -1914,7 +1914,7 @@ Id: f9de84865e3e8455a09af78bfe4d1da5
 Name: 张佳玮
 Gender: man
 UserType: people
-Follower count: 1425277
+Follower count: 1425496
 Answer count: 3060
 Article count: 729
 ------------------
@@ -1924,7 +1924,7 @@ Id: 6d443177eca4f4f098b4a4b63046b4b0
 Name: 王瑞恩
 Gender: man
 UserType: people
-Follower count: 170797
+Follower count: 170863
 Answer count: 567
 Article count: 81
 ------------------
@@ -1934,7 +1934,7 @@ Id: 08f08153e70669661c5e4217815aec0e
 Name: 霍老爷
 Gender: man
 UserType: people
-Follower count: 193481
+Follower count: 193492
 Answer count: 679
 Article count: 79
 ------------------
@@ -1944,7 +1944,7 @@ Id: 64e77bad1411138f3b4d7e1bf1e820b8
 Name: 可盈
 Gender: woman
 UserType: people
-Follower count: 6025
+Follower count: 6029
 Answer count: 162
 Article count: 1
 ------------------
@@ -1964,7 +1964,7 @@ Id: 85b50007a53cc580fa9f58afb08b72cd
 Name: 贺嘉
 Gender: man
 UserType: people
-Follower count: 44212
+Follower count: 44241
 Answer count: 85
 Article count: 93
 ------------------
@@ -1974,7 +1974,7 @@ Id: 1b72d70b702b3920638f0235d380ebd8
 Name: 忆臻
 Gender: man
 UserType: people
-Follower count: 4482
+Follower count: 4484
 Answer count: 38
 Article count: 76
 ------------------
@@ -2024,7 +2024,7 @@ Id: cc0767a011397b2adac4e1ae6ac00b83
 Name: 刘知远
 Gender: man
 UserType: people
-Follower count: 23336
+Follower count: 23352
 Answer count: 378
 Article count: 5
 ------------------
@@ -2034,7 +2034,7 @@ Id: fdf39532883a73e7d2d09b485588d7c7
 Name: 到处挖坑蒋玉成
 Gender: man
 UserType: people
-Follower count: 6492
+Follower count: 6495
 Answer count: 2884
 Article count: 22
 ------------------
@@ -2044,7 +2044,7 @@ Id: 347f8ad5c5a88fa0da7420cc95d88d8f
 Name: 葉神月
 Gender: man
 UserType: people
-Follower count: 53568
+Follower count: 53572
 Answer count: 155
 Article count: 0
 ------------------
@@ -2054,7 +2054,7 @@ Id: 2b81947c2821e9d2f47907a51b15e6f8
 Name: 恶膜的奶爸
 Gender: man
 UserType: people
-Follower count: 452203
+Follower count: 452228
 Answer count: 1220
 Article count: 107
 ------------------
@@ -2064,7 +2064,7 @@ Id: fdc7221dee84f1e5238d08178df1a3cc
 Name: 曾少贤
 Gender: man
 UserType: people
-Follower count: 213055
+Follower count: 213102
 Answer count: 649
 Article count: 98
 ------------------
@@ -2074,7 +2074,7 @@ Id: 184d63c15edb58b42e0a02628945fa76
 Name: 曾加
 Gender: man
 UserType: people
-Follower count: 251156
+Follower count: 251233
 Answer count: 292
 Article count: 29
 ------------------
@@ -2094,7 +2094,7 @@ Id: c6e85ba5d5999df4c5ce2f2903b1ce0e
 Name: 马力
 Gender: man
 UserType: people
-Follower count: 253637
+Follower count: 253664
 Answer count: 960
 Article count: 1505
 ------------------
@@ -2104,7 +2104,7 @@ Id: 25f88ce399d0fa79e9ee0363094a8413
 Name: 赖勇浩
 Gender: man
 UserType: people
-Follower count: 7197
+Follower count: 7199
 Answer count: 278
 Article count: 12
 ------------------
@@ -2114,7 +2114,7 @@ Id: 8b68876001197b3b9cd605b20814616f
 Name: 张亮
 Gender: man
 UserType: people
-Follower count: 720069
+Follower count: 720101
 Answer count: 1436
 Article count: 110
 ------------------
@@ -2124,7 +2124,7 @@ Id: b6f80220378c8b0b78175dd6a0b9c680
 Name: 黄继新
 Gender: man
 UserType: people
-Follower count: 810087
+Follower count: 810101
 Answer count: 782
 Article count: 95
 ------------------
@@ -2134,7 +2134,7 @@ Id: 59d41f04964870e9a874783d64373d68
 Name: 李申申
 Gender: man
 UserType: people
-Follower count: 130781
+Follower count: 130785
 Answer count: 165
 Article count: 2
 ------------------
@@ -2144,7 +2144,7 @@ Id: 6733f12c60e7e98ea7491f20de46f79e
 Name: 周源
 Gender: man
 UserType: people
-Follower count: 777193
+Follower count: 777218
 Answer count: 340
 Article count: 8
 ------------------
@@ -2164,7 +2164,7 @@ Id: a80a326a97a2b47982ba4ec59a6a5358
 Name: 民航宝宝-万万
 Gender: woman
 UserType: people
-Follower count: 44688
+Follower count: 44690
 Answer count: 389
 Article count: 0
 ------------------
@@ -2174,7 +2174,7 @@ Id: 1e2c9261b85996ccc3c5436850127e33
 Name: Milo Yip
 Gender: man
 UserType: people
-Follower count: 99919
+Follower count: 99926
 Answer count: 1349
 Article count: 38
 ------------------
@@ -2194,7 +2194,7 @@ Id: ef959a462c8b86ed3e0a3c1b1ace3df1
 Name: 王尼玛
 Gender: man
 UserType: people
-Follower count: 478323
+Follower count: 478369
 Answer count: 148
 Article count: 1
 ------------------
@@ -2204,7 +2204,7 @@ Id: 129fd2d679c7c5529b4f4ee59cf45fce
 Name: 鹤运
 Gender: man
 UserType: people
-Follower count: 16653
+Follower count: 16657
 Answer count: 289
 Article count: 22
 ------------------
@@ -2214,7 +2214,7 @@ Id: c3239475688a09f3252cc320cc214ce4
 Name: 弗兰克扬
 Gender: man
 UserType: people
-Follower count: 10506
+Follower count: 10510
 Answer count: 272
 Article count: 81
 ------------------
@@ -2224,7 +2224,7 @@ Id: cc8d3708a63553e746da33e0ad17917c
 Name: Shenxi Duan
 Gender: woman
 UserType: people
-Follower count: 1000
+Follower count: 999
 Answer count: 32
 Article count: 0
 ------------------
@@ -2244,7 +2244,7 @@ Id: 7240b2ae38836f4837c2d7355b2ee72d
 Name: pansz
 Gender: man
 UserType: people
-Follower count: 220916
+Follower count: 220918
 Answer count: 3646
 Article count: 9
 ------------------
@@ -2284,7 +2284,7 @@ Id: be32531f7159014080c7593d9a32d8a6
 Name: 陈良乔
 Gender: man
 UserType: people
-Follower count: 9722
+Follower count: 9723
 Answer count: 1043
 Article count: 76
 ------------------
@@ -2294,7 +2294,7 @@ Id: ebd95bca61f4aaed185d5f5366630719
 Name: 刘鑫
 Gender: man
 UserType: people
-Follower count: 23960
+Follower count: 23961
 Answer count: 1636
 Article count: 22
 ------------------
@@ -2304,7 +2304,7 @@ Id: 8073bc40eef9c7f61a00e307791048df
 Name: 林梓
 Gender: woman
 UserType: people
-Follower count: 15949
+Follower count: 15951
 Answer count: 30
 Article count: 20
 ------------------
@@ -2314,7 +2314,7 @@ Id: 7baaf3c00c2c7daeddf8e9ba813af141
 Name: tombkeeper
 Gender: man
 UserType: people
-Follower count: 80673
+Follower count: 80816
 Answer count: 471
 Article count: 2
 ------------------
@@ -2334,7 +2334,7 @@ Id: f5717ebe9bc3f09df884ee0e24e7fb32
 Name: 成楚旸
 Gender: man
 UserType: people
-Follower count: 29497
+Follower count: 29505
 Answer count: 327
 Article count: 30
 ------------------
@@ -2354,7 +2354,7 @@ Id: 7384ee9684239542f49d3b8571a0f37b
 Name: 果程C
 Gender: man
 UserType: people
-Follower count: 6260
+Follower count: 6261
 Answer count: 316
 Article count: 11
 ------------------
@@ -2364,7 +2364,7 @@ Id: c1c892f179f95da8b37a1dc604839d2c
 Name: 陈硕
 Gender: man
 UserType: people
-Follower count: 49065
+Follower count: 49069
 Answer count: 1231
 Article count: 10
 ------------------
@@ -2374,7 +2374,7 @@ Id: 4561b2270a104993e2988a9ce5a1cad2
 Name: 马前卒
 Gender: man
 UserType: people
-Follower count: 342887
+Follower count: 342914
 Answer count: 1454
 Article count: 145
 ------------------
@@ -2384,7 +2384,7 @@ Id: b6d28ac2b88b7f230552bab4a0aceaca
 Name: Belleve
 Gender: man
 UserType: people
-Follower count: 42481
+Follower count: 42484
 Answer count: 5430
 Article count: 69
 ------------------
@@ -2394,7 +2394,7 @@ Id: c32ad3f421f57eaa80782e51ec6a5bde
 Name: 廖雪峰
 Gender: man
 UserType: people
-Follower count: 38778
+Follower count: 38799
 Answer count: 238
 Article count: 16
 ------------------
@@ -2404,7 +2404,7 @@ Id: f515faa31ad1e5176975b5a5ee648a7b
 Name: 童晶
 Gender: man
 UserType: people
-Follower count: 10707
+Follower count: 10716
 Answer count: 6
 Article count: 32
 ------------------
@@ -2414,7 +2414,7 @@ Id: 745f68a74a02e49711cc097e1855b1e1
 Name: 蓝色
 Gender: man
 UserType: people
-Follower count: 54520
+Follower count: 54535
 Answer count: 813
 Article count: 22
 ------------------
@@ -2424,7 +2424,7 @@ Id: 9558cac1a967147f0318fe6b7b1a0f7b
 Name: 白如冰
 Gender: man
 UserType: people
-Follower count: 117048
+Follower count: 117064
 Answer count: 3249
 Article count: 9
 ------------------
@@ -2434,7 +2434,7 @@ Id: d073f194bcabc1cec5ef69d0b534de99
 Name: 空明流转
 Gender: man
 UserType: people
-Follower count: 37997
+Follower count: 37998
 Answer count: 1120
 Article count: 83
 ------------------
@@ -2444,7 +2444,7 @@ Id: 5530c64d6a9a2c8957a83dc668497adc
 Name: 勃失败
 Gender: woman
 UserType: people
-Follower count: 22328
+Follower count: 22327
 Answer count: 247
 Article count: 17
 ------------------
@@ -2454,7 +2454,7 @@ Id: 34c8777b9ba7c16f436f9bf934db56fe
 Name: 秋叶
 Gender: woman
 UserType: people
-Follower count: 57559
+Follower count: 57566
 Answer count: 188
 Article count: 0
 ------------------
@@ -2464,7 +2464,7 @@ Id: 1c7f429366f5db6b3cf05e2b6eaac0a9
 Name: 陈萌萌
 Gender: woman
 UserType: people
-Follower count: 90024
+Follower count: 90036
 Answer count: 170
 Article count: 3
 ------------------
@@ -2474,7 +2474,7 @@ Id: d127d540d194cf37387ebd4ea250ff6a
 Name: 金旭亮
 Gender: man
 UserType: people
-Follower count: 42391
+Follower count: 42432
 Answer count: 651
 Article count: 7
 ------------------
@@ -2484,7 +2484,7 @@ Id: 6f60827926738efe5a4f4e04cfef52c0
 Name: h8liu
 Gender: man
 UserType: people
-Follower count: 10003
+Follower count: 10006
 Answer count: 407
 Article count: 7
 ------------------
@@ -2494,7 +2494,7 @@ Id: bb5e555aa573a409d7f45c1f308935f8
 Name: 梦之轮回
 Gender: man
 UserType: people
-Follower count: 1401
+Follower count: 1400
 Answer count: 405
 Article count: 0
 ------------------
@@ -2524,7 +2524,7 @@ Id: 0b21747b1fec79ad8af7e68a2b1ff681
 Name: 叛逆者
 Gender: man
 UserType: people
-Follower count: 118465
+Follower count: 118478
 Answer count: 4221
 Article count: 52
 ------------------
@@ -2534,9 +2534,9 @@ Id: b569149131b374bdf64dbbcbea80c280
 Name: 高冷冷
 Gender: woman
 UserType: people
-Follower count: 33974
-Answer count: 15
-Article count: 1
+Follower count: 34001
+Answer count: 16
+Article count: 2
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
 Information of User: 龚博致
@@ -2554,7 +2554,7 @@ Id: a06cfb38e37dac1658e6457df4d7f032
 Name: RednaxelaFX
 Gender: man
 UserType: people
-Follower count: 97487
+Follower count: 97496
 Answer count: 1358
 Article count: 71
 ------------------
@@ -2564,7 +2564,7 @@ Id: 6d11f4d0ce00d647330b9d917e91e56e
 Name: 章孜
 Gender: man
 UserType: people
-Follower count: 10242
+Follower count: 10244
 Answer count: 1512
 Article count: 11
 ------------------
@@ -2604,7 +2604,7 @@ Id: 779f7b42f6798a512678c177c0290084
 Name: 图灵Don
 Gender: man
 UserType: people
-Follower count: 139408
+Follower count: 139425
 Answer count: 3523
 Article count: 75
 ------------------
@@ -2614,7 +2614,7 @@ Id: ddf16e5484b23384989b6d1d96ed1bbf
 Name: 雪梨·麦卡沃伊
 Gender: woman
 UserType: people
-Follower count: 456
+Follower count: 457
 Answer count: 133
 Article count: 0
 ------------------
@@ -2634,7 +2634,7 @@ Id: 5537bbd59d00ae83c4a9330cf2ea7bd4
 Name: 赵世奇
 Gender: man
 UserType: people
-Follower count: 387949
+Follower count: 387955
 Answer count: 598
 Article count: 8
 ------------------
@@ -2654,7 +2654,7 @@ Id: 8e285886f06033387a195db344c678a0
 Name: 小舟杜梦杰
 Gender: man
 UserType: people
-Follower count: 26334
+Follower count: 26333
 Answer count: 0
 Article count: 0
 ------------------
@@ -2674,7 +2674,7 @@ Id: e0b5a47e889233397702282b0cc705bf
 Name: 陈然
 Gender: man
 UserType: people
-Follower count: 106894
+Follower count: 106916
 Answer count: 796
 Article count: 25
 ------------------
@@ -2684,7 +2684,7 @@ Id: b6f0c45a4d0dc84f228977e0d70bd700
 Name: 立党
 Gender: man
 UserType: people
-Follower count: 65079
+Follower count: 65085
 Answer count: 2352
 Article count: 280
 ------------------
@@ -2694,7 +2694,7 @@ Id: 09510a4428d8e3da5d043afdb367792c
 Name: 徐国曦
 Gender: woman
 UserType: people
-Follower count: 15398
+Follower count: 15402
 Answer count: 334
 Article count: 18
 ------------------
@@ -2704,7 +2704,7 @@ Id: ba438103b9a16d8c292086bbcb54eb7b
 Name: 曾博
 Gender: man
 UserType: people
-Follower count: 55142
+Follower count: 55144
 Answer count: 1898
 Article count: 38
 ------------------
@@ -2714,7 +2714,7 @@ Id: b53bbee118a6db4d51c98060abd833cd
 Name: 陈章鱼
 Gender: man
 UserType: people
-Follower count: 533620
+Follower count: 533632
 Answer count: 968
 Article count: 127
 ------------------
@@ -2734,8 +2734,8 @@ Id: e35e111b7fd5e8b9c9f9304ab277e40c
 Name: 孙明琦
 Gender: man
 UserType: people
-Follower count: 7298
-Answer count: 2794
+Follower count: 7299
+Answer count: 2795
 Article count: 28
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -2744,7 +2744,7 @@ Id: 6173d0b2d6bffae954184786b3fa92b8
 Name: 何钦尧
 Gender: man
 UserType: people
-Follower count: 25376
+Follower count: 25382
 Answer count: 285
 Article count: 2
 ------------------
@@ -2754,7 +2754,7 @@ Id: 8e7c22f13ec5d5da90250c2b7e4aee9e
 Name: 戴雨森
 Gender: man
 UserType: people
-Follower count: 47129
+Follower count: 47136
 Answer count: 168
 Article count: 5
 ------------------
@@ -2764,7 +2764,7 @@ Id: 728400ddba401f110db15267942af8f2
 Name: Dongyu Jia
 Gender: man
 UserType: people
-Follower count: 4276
+Follower count: 4277
 Answer count: 65
 Article count: 1
 ------------------
@@ -2784,7 +2784,7 @@ Id: 39e762720cf4bc6c4f59ae6570efcd68
 Name: 学术状态帝
 Gender: man
 UserType: people
-Follower count: 46886
+Follower count: 46888
 Answer count: 395
 Article count: 6
 ------------------
@@ -2794,8 +2794,8 @@ Id: ec03b8e839a6fb763e1b8113455362db
 Name: winter
 Gender: woman
 UserType: people
-Follower count: 101065
-Answer count: 964
+Follower count: 101076
+Answer count: 966
 Article count: 10
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -2804,7 +2804,7 @@ Id: 78e3b98074a915b222ae1be4ab038a6e
 Name: 赵劼
 Gender: man
 UserType: people
-Follower count: 138451
+Follower count: 138465
 Answer count: 1277
 Article count: 0
 ------------------
@@ -2814,7 +2814,7 @@ Id: eaf435b228ce0b038a4afe8203f59b49
 Name: 路人甲
 Gender: man
 UserType: people
-Follower count: 170208
+Follower count: 170288
 Answer count: 246
 Article count: 144
 ------------------
@@ -2824,7 +2824,7 @@ Id: 661caec93ce34238ac0021669338cd42
 Name: Yong He
 Gender: man
 UserType: people
-Follower count: 27227
+Follower count: 27232
 Answer count: 119
 Article count: 2
 ------------------
@@ -2834,7 +2834,7 @@ Id: d98ecd8da62f5a3e663ead141e308df9
 Name: Yan Gu
 Gender: man
 UserType: people
-Follower count: 16719
+Follower count: 16721
 Answer count: 114
 Article count: 1
 ------------------
@@ -2844,7 +2844,7 @@ Id: 59827f0a435d7b054c8339422dde6773
 Name: 文刀秋二
 Gender: man
 UserType: people
-Follower count: 14138
+Follower count: 14142
 Answer count: 66
 Article count: 15
 ------------------
@@ -2874,7 +2874,7 @@ Id: 167f3e422c77f8333e79e1c369896bb1
 Name: 新东方在线四六级
 Gender: woman
 UserType: organization
-Follower count: 24813
+Follower count: 24827
 Answer count: 67
 Article count: 27
 ------------------
@@ -2884,7 +2884,7 @@ Id: 13ba78a859eaf6b9a5b27c5c56ee8419
 Name: ze ran
 Gender: man
 UserType: people
-Follower count: 254516
+Follower count: 254550
 Answer count: 2622
 Article count: 12
 ------------------
@@ -2894,8 +2894,8 @@ Id: 1a40d2e99ed2e10e3738d9f47aa126bc
 Name: 城市猎人
 Gender: man
 UserType: people
-Follower count: 24211
-Answer count: 829
+Follower count: 24216
+Answer count: 830
 Article count: 0
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -2904,7 +2904,7 @@ Id: 41f58a858f5cb84ebbead1836096e48a
 Name: 唐缺
 Gender: man
 UserType: people
-Follower count: 294259
+Follower count: 294320
 Answer count: 3493
 Article count: 44
 ------------------
@@ -2914,7 +2914,7 @@ Id: 51c786c4b15ffc61ae18fdb44f1c5848
 Name: 36氪
 Gender: woman
 UserType: organization
-Follower count: 96803
+Follower count: 96814
 Answer count: 37
 Article count: 71
 ------------------
@@ -2924,7 +2924,7 @@ Id: 9f6994ec84e1257177cdcc7ea506bfcb
 Name: 王哲
 Gender: man
 UserType: people
-Follower count: 50053
+Follower count: 50054
 Answer count: 195
 Article count: 4
 ------------------
@@ -2934,7 +2934,7 @@ Id: e5fb0aab23f1ebca897594c74d178c79
 Name: 涛吴
 Gender: man
 UserType: people
-Follower count: 190481
+Follower count: 190492
 Answer count: 907
 Article count: 12
 ------------------
@@ -2944,7 +2944,7 @@ Id: a638470d2e77d02fbd8e00570541f1cb
 Name: 阿九
 Gender: man
 UserType: people
-Follower count: 21897
+Follower count: 21898
 Answer count: 199
 Article count: 7
 ------------------
@@ -2954,7 +2954,7 @@ Id: 762e446563bcd0a13f5d16f69eeee211
 Name: 装配脑袋
 Gender: man
 UserType: people
-Follower count: 8688
+Follower count: 8689
 Answer count: 70
 Article count: 1
 ------------------
@@ -2964,7 +2964,7 @@ Id: ce818bf23f05445cfdf62f79075a6077
 Name: 周筠
 Gender: woman
 UserType: people
-Follower count: 107601
+Follower count: 107615
 Answer count: 719
 Article count: 140
 ------------------
@@ -2974,7 +2974,7 @@ Id: 8fcc30ba267650d2a5ee8e74040a3b00
 Name: Coldwings
 Gender: man
 UserType: people
-Follower count: 18335
+Follower count: 18343
 Answer count: 1503
 Article count: 5
 ------------------
@@ -2984,7 +2984,7 @@ Id: 3d198a56310c02c4a83efb9f4a4c027e
 Name: 知乎小管家
 Gender: woman
 UserType: people
-Follower count: 92380
+Follower count: 92409
 Answer count: 50
 Article count: 65
 ------------------
@@ -3004,7 +3004,7 @@ Id: 4acf3827b1c4e563b5a99d39a494e6e3
 Name: 程序袁滚滚
 Gender: man
 UserType: people
-Follower count: 21959
+Follower count: 21967
 Answer count: 289
 Article count: 14
 ------------------
@@ -3014,7 +3014,7 @@ Id: 9ce91cd5ba9301a43e7bb63496f2ec0f
 Name: gaga salamer
 Gender: woman
 UserType: people
-Follower count: 4450
+Follower count: 4451
 Answer count: 116
 Article count: 4
 ------------------
@@ -3034,7 +3034,7 @@ Id: 5d5d37e9b92ed57ec58b9142d5109807
 Name: 自由飞
 Gender: man
 UserType: people
-Follower count: 14670
+Follower count: 14674
 Answer count: 656
 Article count: 225
 ------------------
@@ -3054,7 +3054,7 @@ Id: 1489f98f6d8929029842000b0a69b5dd
 Name: 腾讯科技
 Gender: woman
 UserType: organization
-Follower count: 103258
+Follower count: 103263
 Answer count: 105
 Article count: 46
 ------------------
@@ -3064,8 +3064,8 @@ Id: 0970f947b898ecc0ec035f9126dd4e08
 Name: vczh
 Gender: man
 UserType: people
-Follower count: 598469
-Answer count: 16407
+Follower count: 598549
+Answer count: 16409
 Article count: 70
 ------------------
 >>>>>>>>>>>>>>>>>>>>>>>>
@@ -3074,7 +3074,7 @@ Id: 9959e364fc3b62367c587c4697d8a8fd
 Name: Soulframe
 Gender: man
 UserType: people
-Follower count: 28272
+Follower count: 28275
 Answer count: 14
 Article count: 16
 ------------------
@@ -3094,7 +3094,7 @@ Id: 46b1ae7841fee2d505a1874fafe1e5a2
 Name: 傅红雪
 Gender: man
 UserType: people
-Follower count: 20260
+Follower count: 20258
 Answer count: 346
 Article count: 0
 ------------------
@@ -3104,7 +3104,7 @@ Id: 172bdd3dc7eb563194150c423a6014d4
 Name: 王二
 Gender: man
 UserType: people
-Follower count: 201737
+Follower count: 201728
 Answer count: 2
 Article count: 0
 ------------------
@@ -3114,7 +3114,7 @@ Id: 39e1a1e41b3903f9283e13d11a39bbfd
 Name: 玲珑邪僧
 Gender: woman
 UserType: people
-Follower count: 134477
+Follower count: 134497
 Answer count: 44
 Article count: 1
 ------------------
@@ -3134,7 +3134,7 @@ Id: 8e6c8cac794b7d4d34c83d85e573492c
 Name: 魏剑峰
 Gender: man
 UserType: people
-Follower count: 65815
+Follower count: 65844
 Answer count: 55
 Article count: 85
 ------------------
@@ -3144,8 +3144,7 @@ Id: 043ff01e5d03c529c268d50f388012c2
 Name: 李开复
 Gender: woman
 UserType: people
-Follower count: 1014184
+Follower count: 1014222
 Answer count: 107
 Article count: 2
 ------------------
-==> That's all, Thank you!

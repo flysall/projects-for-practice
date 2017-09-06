@@ -120,8 +120,10 @@ public class Seed {
 			}
 			loginCookie = getCookie(loginstatus, "loginCookie");
 		} else{
-			System.out.println("==> we have cookie, don't need to login");
-			String login = new String(Files.readAllBytes(Paths.get("D:/cookie.txt")));
+			System.out.println("==> we have cookie(See it in D:/cookie.txt), don't need to login");
+			System.out.println("==> Please wait again");
+			loginCookie = new String(Files.readAllBytes(Paths.get("D:/cookie.txt")));
+			loginCookie = loginCookie.substring(0, loginCookie.length() - 3);
 		}
 		return loginCookie;
 	}
