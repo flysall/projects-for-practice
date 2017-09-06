@@ -22,6 +22,7 @@ public class MyCrawler {
 	private PrintStream ps;
 	int current = 0;
 	private static boolean save = false; // 是否将爬取结果保存到本地
+	private static boolean cookieSave = false; //是否将cookie保存到本地
 	// 加载配置文件
 	static {
 		try {
@@ -31,6 +32,11 @@ public class MyCrawler {
 			e.printStackTrace();
 		}
 		save = config.getProperty("save").equals("true");
+		cookieSave = config.getProperty("cookieSave").equals("true");
+	}
+	
+	public static boolean getCookieSave(){
+		return MyCrawler.cookieSave;
 	}
 	
 	public MyCrawler(String userName, String pwd) {
@@ -41,8 +47,9 @@ public class MyCrawler {
 	/**
 	 * @param initialUrl
 	 *            初始网址
+	 * @throws IOException 
 	 */
-	public void crawling(String initialUrl) {
+	public void crawling(String initialUrl) throws IOException {
 		LinkQueue.addUnvisited(initialUrl);
 		while (!LinkQueue.isUnVisitedEmpty() && LinkQueue.getVisitedSize() < 20) {
 			String url = (String) LinkQueue.removeUnvisited();
@@ -92,8 +99,8 @@ public class MyCrawler {
 		}
 	}
 
-	// 调试到Seed.getCookie
-	public static void main(String[] args) {
+	
+	public static void main(String[] args) throws IOException {
 		System.out.println("==> Hello, Please wait");
 		String userName = config.getProperty("userName");
 		String password = config.getProperty("password");

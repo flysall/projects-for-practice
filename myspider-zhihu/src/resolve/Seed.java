@@ -1,8 +1,13 @@
 package resolve;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.URI;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -22,6 +27,8 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.util.EntityUtils;
 
+import loop.MyCrawler;
+
 /**
  * 获取Cookie
  */
@@ -33,6 +40,9 @@ public class Seed {
 	private String captURL = "https://www.zhihu.com/captcha.gif?r=" + System.currentTimeMillis() + "&type=login";
 	private String userName = "";
 	private String passWord = "";
+	private boolean cookieSave = false; 
+	private FileInputStream fis = null;
+	private File cookieFile = null;
 
 	public String getName() {
 		return this.userName;
@@ -69,8 +79,9 @@ public class Seed {
 	 * @param url
 	 *            登录页面网址
 	 * @return 返回用户Cookie
+	 * @throws IOException 
 	 */
-	public String getCookie(String url) {
+	public String getCookie(String url) throws IOException {
 		HttpGet getMethod = new HttpGet(url);
 		getMethod.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
 		getMethod.setHeader("Accept-Encoding", "gzip, deflate, sdch");
@@ -81,28 +92,37 @@ public class Seed {
 		String cookie = null;
 		String responseHtml = null;
 		HttpResponse loginstatus = null;
+		String loginCookie = null;
+		cookieSave = MyCrawler.getCookieSave();
 		URI u = null;
-		try {
-			status = httpClient.execute(getMethod);
-			cookie = getCookie(status);
-			responseHtml = EntityUtils.toString(status.getEntity());
-			xsrfValue = responseHtml.split("<input type=\"hidden\" name=\"_xsrf\" value=\"")[1].split("\"/>")[0];
-			String captcha = getCaptcha(httpClient, cookie);
-			u = new URIBuilder(url).addParameter("_xsrf", xsrfValue).addParameter("phone_num", userName)
-					.addParameter("password", passWord).addParameter("captcha", captcha).build();
-			HttpPost postMethod = new HttpPost(u);
-			postMethod.setHeader("Cookie", cookie);
-			loginstatus = httpClient.execute(postMethod);
-			if (loginstatus.getStatusLine().getStatusCode() == HttpStatus.SC_MOVED_TEMPORARILY) {
-				Header head = loginstatus.getFirstHeader("Location");
-				String strHead = head.getValue();
-				HttpPost rePostMethod = new HttpPost(strHead);
-				loginstatus = httpClient.execute(rePostMethod);
+		cookieFile = new File("D:/cookie.txt");
+
+		if(cookieFile.exists() == false || cookieSave == false){
+			try {
+				status = httpClient.execute(getMethod);
+				cookie = getCookie(status, "cookie");
+				responseHtml = EntityUtils.toString(status.getEntity());
+				xsrfValue = responseHtml.split("<input type=\"hidden\" name=\"_xsrf\" value=\"")[1].split("\"/>")[0];
+				String captcha = getCaptcha(httpClient, cookie);
+				u = new URIBuilder(url).addParameter("_xsrf", xsrfValue).addParameter("phone_num", userName)
+						.addParameter("password", passWord).addParameter("captcha", captcha).build();
+				HttpPost postMethod = new HttpPost(u);
+				postMethod.setHeader("Cookie", cookie);
+				loginstatus = httpClient.execute(postMethod);
+				if (loginstatus.getStatusLine().getStatusCode() == HttpStatus.SC_MOVED_TEMPORARILY) {
+					Header head = loginstatus.getFirstHeader("Location");
+					String strHead = head.getValue();
+					HttpPost rePostMethod = new HttpPost(strHead);
+					loginstatus = httpClient.execute(rePostMethod);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
+			loginCookie = getCookie(loginstatus, "loginCookie");
+		} else{
+			System.out.println("==> we have cookie, don't need to login");
+			String login = new String(Files.readAllBytes(Paths.get("D:/cookie.txt")));
 		}
-		String loginCookie = getCookie(loginstatus);
 		return loginCookie;
 	}
 
@@ -110,7 +130,7 @@ public class Seed {
 	 * @param httpResponse服务器回应消息
 	 * @return 返回用户cookie
 	 */
-	public String getCookie(HttpResponse httpResponse) {
+	public String getCookie(HttpResponse httpResponse, String flag) {
 		Map<String, String> cookieMap = new HashMap<String, String>(64);
 		Header[] headers = httpResponse.getHeaders("Set-Cookie");
 		if (headers == null || headers.length == 0) {
@@ -134,6 +154,18 @@ public class Seed {
 		String cookiesTmp = "";
 		for (String key : cookieMap.keySet()) {
 			cookiesTmp += key + "=" + cookieMap.get(key) + ";";
+		}
+		if(cookieSave == true && flag.equals("loginCookie")){
+			try{
+				FileOutputStream fos = new FileOutputStream(cookieFile);
+				PrintStream ps = new PrintStream(fos);
+				System.setOut(ps);
+				System.out.println(cookiesTmp);
+				ps.close();
+				fos.close();
+			} catch (IOException e){
+				e.printStackTrace();
+			} 
 		}
 		return cookiesTmp.substring(0, cookiesTmp.length() - 2);
 	}

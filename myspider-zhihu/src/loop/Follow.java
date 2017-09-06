@@ -53,11 +53,13 @@ public class Follow {
 	/**
 	 * @param url
 	 *            要解析的用户的网址， 获得该用户关注的所有人的信息
+	 * @throws IOException 
 	 */
-	public void parseURL(String url) {
+	public void parseURL(String url) throws IOException {
 		person = new LinkedHashMap<>();
 		if (count == 0) {
 			cookie = seed.getCookie("https://www.zhihu.com/login/phone_num");
+			System.out.println(cookie);
 			count++;
 		}
 		// 网址列表，包含了用户关注的人的所有信息
