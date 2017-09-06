@@ -107,6 +107,7 @@ public class Follow {
 					personInfo.add(is_followed);
 					personInfo.add(answer_count);
 					personInfo.add(articles_count);
+					personInfo.add(avatar_url);
 					person.put(name, personInfo);
 				}
 			}
