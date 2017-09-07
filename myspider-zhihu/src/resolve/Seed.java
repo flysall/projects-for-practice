@@ -161,9 +161,10 @@ public class Seed {
 			try{
 				FileOutputStream fos = new FileOutputStream(cookieFile);
 				PrintStream ps = new PrintStream(fos);
+				System.out.println("==> the cookie is being saved to D:/cookie.txt");
+				System.out.println("==> The information is printing to user_information.txt, Please check it!");
 				System.setOut(ps);
 				System.out.println(cookiesTmp);
-				ps.close();
 				fos.close();
 			} catch (IOException e){
 				e.printStackTrace();

@@ -25,6 +25,7 @@ public class ParseHtml {
 			Document doc = Jsoup.parse(html);
 			Elements elements = doc.getElementsByClass("NumberBoard-value");
 			String name = doc.getElementsByClass("Tabs-link").first().attr("href");
+			System.out.println(name);
 			Pattern pattern = Pattern.compile("/");
 			Matcher match = pattern.matcher(name);
 			int number = 0;

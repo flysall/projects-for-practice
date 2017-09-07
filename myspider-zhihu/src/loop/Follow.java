@@ -27,7 +27,7 @@ public class Follow {
 	private static String cookie;
 	private static List<String> urlList;
 	private static int count = 0;
-	private static int followingNumber = 0;
+	private static int followingNumber = 0;  //该用户关注的人数
 	private RequestConfig globalConfig;
 	private CloseableHttpClient httpClient;
 	private static String bFollowingURL = "https://www.zhihu.com/api/v4/members/";
@@ -74,10 +74,7 @@ public class Follow {
 					if (response.getEntity() != null) {
 						jsonContent = EntityUtils.toString(response.getEntity());
 					}
-				} else{
-					System.out.println("==> The cookie has failed, please delete it and run again");
-					System.exit(0);
-				}
+				} 
 			} catch (IOException | ParseException e) {
 				e.printStackTrace();
 			}
@@ -128,7 +125,9 @@ public class Follow {
 	 */
 	public static List<String> handleURL(String url, String cookie) {
 		String html = Seed.visit(url, cookie);
+		System.out.println(html);
 		List<String> content = ParseHtml.basicInfo(html);
+//		System.out.println(content);
 		String name = content.get(0);
 		String followingURL;
 		followingNumber = Integer.parseInt(content.get(1));
@@ -144,6 +143,8 @@ public class Follow {
 			followingURL = bFollowingURL + name + eFollowingURL + "limit=20&offset=0";
 			urlList.add(followingURL);
 		}
+		System.out.println(urlList.get(0));
+		System.out.println(urlList.get(1));
 		return urlList;
 	}
 

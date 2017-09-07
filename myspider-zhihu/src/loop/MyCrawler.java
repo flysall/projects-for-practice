@@ -97,8 +97,6 @@ public class MyCrawler {
 				LinkQueue.addUnvisited(nextURL);
 			}
 			ps.close();
-			System.out.println("????");
-				
 		}
 	}
 
