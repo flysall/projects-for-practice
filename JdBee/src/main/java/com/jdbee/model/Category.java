@@ -19,7 +19,7 @@ public class Category {
 		return name;
 	}
 
-	public List<SecondCategory> getSenondCates() {
+	public List<SecondCategory> getSecondCates() {
 		return secondCates;
 	}
 
