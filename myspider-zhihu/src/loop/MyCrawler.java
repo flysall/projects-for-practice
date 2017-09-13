@@ -51,6 +51,7 @@ public class MyCrawler {
 	 */
 	public void crawling(String initialUrl) throws IOException {
 		LinkQueue.addUnvisited(initialUrl);
+		//20用来限制爬取的链接数目
 		while (!LinkQueue.isUnVisitedEmpty() && LinkQueue.getVisitedSize() < 20) {
 			String url = (String) LinkQueue.removeUnvisited();
 			if (url == null)
@@ -58,11 +59,11 @@ public class MyCrawler {
 			followList.parseURL(url);
 			personMap = followList.getPerson();
 			Iterator<List<Object>> personValue = personMap.values().iterator();
-			if (count == 0) {
+//			if (count == 0) {
 				personkey = personMap.keySet().iterator();
 				size = personMap.size();
-				count++;
-			}
+//				count++;
+//			}
 			if (count == size) {
 				System.out.print(personkey.next() + ":");
 				count = 0;
@@ -81,7 +82,7 @@ public class MyCrawler {
 			}
 			while (personValue.hasNext()) {
 				current++;
-				nextURL = bURL + personValue.next().get(1) + eURL; // get(1)获得urltoke,
+				nextURL = bURL + personValue.next().get(5) + eURL; // get(1)获得urltoke,
 																	// 参考Follow
 				List<Object> list = personMap.get(personkey.next());
 				System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>");
@@ -96,7 +97,6 @@ public class MyCrawler {
 				System.out.println("------------------");
 				LinkQueue.addUnvisited(nextURL);
 			}
-			ps.close();
 		}
 	}
 

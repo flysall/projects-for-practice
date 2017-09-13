@@ -57,10 +57,7 @@ public class Follow {
 	 */
 	public void parseURL(String url) throws IOException {
 		person = new LinkedHashMap<>();
-		if (count == 0) {
-			cookie = seed.getCookie("https://www.zhihu.com/login/phone_num");
-			count++;
-		}
+		cookie = seed.getCookie("https://www.zhihu.com/login/phone_num");
 		// 网址列表，包含了用户关注的人的所有信息
 		List<String> urlList = handleURL(url, cookie);
 		for (int i = 0; i < urlList.size(); i++) {
@@ -125,9 +122,7 @@ public class Follow {
 	 */
 	public static List<String> handleURL(String url, String cookie) {
 		String html = Seed.visit(url, cookie);
-		System.out.println(html);
 		List<String> content = ParseHtml.basicInfo(html);
-//		System.out.println(content);
 		String name = content.get(0);
 		String followingURL;
 		followingNumber = Integer.parseInt(content.get(1));
@@ -143,8 +138,6 @@ public class Follow {
 			followingURL = bFollowingURL + name + eFollowingURL + "limit=20&offset=0";
 			urlList.add(followingURL);
 		}
-		System.out.println(urlList.get(0));
-		System.out.println(urlList.get(1));
 		return urlList;
 	}
 

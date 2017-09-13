@@ -25,7 +25,6 @@ public class ParseHtml {
 			Document doc = Jsoup.parse(html);
 			Elements elements = doc.getElementsByClass("NumberBoard-value");
 			String name = doc.getElementsByClass("Tabs-link").first().attr("href");
-			System.out.println(name);
 			Pattern pattern = Pattern.compile("/");
 			Matcher match = pattern.matcher(name);
 			int number = 0;
@@ -39,8 +38,7 @@ public class ParseHtml {
 			for (Element e : elements) {
 				numberList.add(e.text());
 			}
-		} else {
-			System.out.println("==> That's all, Thank you!");
+		} else{
 			System.exit(0);
 		}
 		return numberList;
