@@ -62,7 +62,7 @@ public class JsoupUtil {
 
 		for (Element skuId : sku) {
 			String path = skuId.attr("data-sku");
-			if (!StringUtil.isEmpty(path)) {
+			if (!StringUtils.isEmpty(path)) {
 				skuUrls.add(path);
 			}
 		}
@@ -168,7 +168,7 @@ public class JsoupUtil {
 
 		for (Category category : list) {
 			if ("食品饮料、保健食品".equals(category.getName())) {
-				List<SecondCategory> senondCates = category.getSenondCates();
+				List<SecondCategory> senondCates = category.getSecondCates();
 				for (SecondCategory secondCategory : senondCates) {
 					if ("进口食品".equals(secondCategory.getName())) {
 						threeCategories = new ArrayList<ThreeCategory>();

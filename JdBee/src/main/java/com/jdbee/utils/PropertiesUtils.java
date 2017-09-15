@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class PropertiesUtils {
 	private static final String DRIVER_PROPERTIES_PATH = "src/main/resource/config.properties";
-	public static final String PHTANTOMJS_DRIVER_PATH = "phantomjs.driveer.path";
+	public static final String PHANTOMJS_DRIVER_PATH = "phantomjs.driveer.path";
 	public static final String PHANTOMJS_JS = "phantomjs.js";
 	
 	private static Properties properties;
