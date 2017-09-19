@@ -16,6 +16,9 @@ import org.jsoup.select.Elements;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商品类目
+ */
 public class JdCategory {
 	public static final Logger log = Logger.getLogger(JdCategory.class);
 
@@ -23,45 +26,47 @@ public class JdCategory {
 	 * 获取类目
 	 */
 	public static List<Category> getCategory() {
-		List<SecondCategory> secondList = null;
-		List<ThreeCategory> threeList = null;
-
 		String content = HttpUtil.sendGet(Constants.JD_URL);
 		List<Category> list = JsoupUtil.getFirstCategory(content);
 		Document document = Jsoup.parse(content);
 
-		Elements elements = document.select(".item-title span");
+		Elements elements = document.select(".item-title span");  //获取所有的一级类目
+		int i = 0;  //变量i用于遍历一级类目
+		//遍历一级类目
 		for (Element element : elements) {
 			String text = element.text();
-			//遍历一级类目
-			for (int i = 0; i < list.size(); i++) {
-				String name = list.get(i).getName();
-				if ("电脑办公".equals(text))
-					text = "电脑、办公";
-				if (name.contains(text)) {
-					Element categoryItem = element.parent().parent().parent();
-					Elements categories = categoryItem.select("dt a");  //所有二级类目
-					Elements threeCate = categoryItem.select("dd a");	//所有三级类目
-					secondList = new ArrayList<SecondCategory>();
-					threeList = new ArrayList<ThreeCategory>();
-					//遍历二级类目
-					for (int j = 0; j < categories.size(); j++) {
-						SecondCategory cate = new SecondCategory(); //二级类目
-						cate.setName(categories.get(j).text());
-						cate.setUrl("https:" + categories.get(j).attr("href"));
-						secondList.add(cate);
-						//遍历三级类目
-						for (int k = 0; k < threeCate.size(); k++) {
-							ThreeCategory threeCategory = new ThreeCategory(); //三级类目
-							threeCategory.setUrl("http:" + threeCate.get(k).attr("href"));
-							threeCategory.setName(threeCate.get(k).text());
-							threeList.add(threeCategory);
-						}
-						cate.setThreeCates(threeList);
+			
+			String name = list.get(i).getName();
+			if ("电脑办公".equals(text))
+				text = "电脑、办公";
+			if (name.contains(text)) {
+				Element secondCategoryItem = element.parent().parent().parent();
+				Elements secondCategories = secondCategoryItem.select("dt a");  //第i个一级类目下的所有二级类目
+				List<SecondCategory> secondList = new ArrayList<SecondCategory>();
+				
+				//遍历某个一级类目下的所有二级类目
+				for(int j = 0; j < secondCategories.size(); j++){
+					Element thirdCategoryItem = secondCategories.get(j).parent().parent();
+					Elements thirdCategories = thirdCategoryItem.select("dd a"); //第j个二级类目下的所有三级类目
+					SecondCategory secondCategory = new SecondCategory();
+					secondCategory.setName(secondCategories.get(j).text());
+					secondCategory.setUrl("https:" + secondCategories.get(j).attr("href"));
+					List<ThreeCategory> threeList = new ArrayList<ThreeCategory>();
+					//遍历第j个二级类目下的所有三级类目
+					for(int k = 0; k < thirdCategories.size(); k++){
+						
+						ThreeCategory threeCategory = new ThreeCategory();
+						threeCategory.setName(thirdCategories.get(k).text());
+						threeCategory.setUrl("https:" + thirdCategories.get(k).attr("href"));
+						threeList.add(threeCategory); 
 					}
-					list.get(i).setSenondCates(secondList);
+					secondCategory.setThreeCates(threeList);
+					secondList.add(secondCategory);
 				}
+				list.get(i).setSenondCates(secondList);
 			}
+			i++;
+			
 		}
 		return list;
 	}
