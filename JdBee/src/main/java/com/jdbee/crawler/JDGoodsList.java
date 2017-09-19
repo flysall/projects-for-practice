@@ -22,7 +22,7 @@ public class JDGoodsList {
 
 	private static GoodsDao goodsDao;
 
-	static {
+	static{
 		ApplicationContext context = new ClassPathXmlApplicationContext("springJdbcContext.xml");
 		goodsDao = (GoodsDao) context.getBean("goodsDao");
 	}

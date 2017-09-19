@@ -1,5 +1,8 @@
 package com.jdbee.model;
 
+/**
+ * 货物
+ */
 public class Goods {
 	private String platform; //平台
 	private String url; //请求路径

@@ -25,7 +25,7 @@ public class JsoupUtil {
 	public static final Logger log = Logger.getLogger(JsoupUtil.class);
 
 	/**
-	 * 获取一级类别
+	 * 获取一级类目列表
 	 * 
 	 * @param content
 	 *            待解析的网页源码
@@ -40,7 +40,6 @@ public class JsoupUtil {
 
 		for (int i = 0; i < categories.size(); i++) {
 			Category category = new Category();
-			;
 			category.setName(categories.get(i).text());
 			category.setId(i);
 			list.add(category);
