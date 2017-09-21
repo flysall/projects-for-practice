@@ -24,9 +24,8 @@ public class JobCrawler {
 	}
 
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-				"classpath:/spring/applicationContext*.xml");
-		final JobCrawler jobCrawler = applicationContext.getBean(JobCrawler.class);
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:/spring/applicationContext*.xml");
+        final JobCrawler jobCrawler = applicationContext.getBean(JobCrawler.class);
 		jobCrawler.crawl();
 	}
 }
