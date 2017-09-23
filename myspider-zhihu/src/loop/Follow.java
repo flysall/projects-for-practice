@@ -26,7 +26,6 @@ public class Follow {
 	private static Seed seed;
 	private static String cookie;
 	private static List<String> urlList;
-	private static int count = 0;
 	private static int followingNumber = 0;  //该用户关注的人数
 	private RequestConfig globalConfig;
 	private CloseableHttpClient httpClient;
@@ -95,6 +94,7 @@ public class Follow {
 					Object is_followed = preName.get("is_followed");
 					Object answer_count = preName.get("answer_count");
 					Object articles_count = preName.get("articles_count");
+					Object is_following = preName.get("is_following");
 					personInfo.add(id);
 					personInfo.add(name);
 					personInfo.add(gender);
@@ -107,6 +107,8 @@ public class Follow {
 					personInfo.add(answer_count);
 					personInfo.add(articles_count);
 					personInfo.add(avatar_url);
+					personInfo.add(is_following);
+					personInfo.add("http://www.zhihu.com/people/" + (String)url_token);
 					person.put(name, personInfo);
 				}
 			}

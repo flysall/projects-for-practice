@@ -28,6 +28,7 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.util.EntityUtils;
 
 import loop.MyCrawler;
+import util.Config;
 
 /**
  * 获取Cookie
@@ -93,7 +94,7 @@ public class Seed {
 		String responseHtml = null;
 		HttpResponse loginstatus = null;
 		String loginCookie = null;
-		cookieSave = MyCrawler.getCookieSave();
+		cookieSave = Config.cookieSave;
 		URI u = null;
 		cookieFile = new File("D:/cookie.txt");
 
