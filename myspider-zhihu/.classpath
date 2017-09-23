@@ -16,5 +16,6 @@
 	<classpathentry kind="lib" path="D:/code/Java/myspider-zhihu/apache/httpmime-4.5.3.jar"/>
 	<classpathentry kind="lib" path="D:/code/Java/myspider-zhihu/apache/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/code/Java/myspider-zhihu/apache/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/code/Java/myspider-zhihu/apache/mysql-connector-java-5.1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
