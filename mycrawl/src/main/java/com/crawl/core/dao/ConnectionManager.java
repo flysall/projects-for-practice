@@ -28,7 +28,7 @@ public class ConnectionManager {
 	}
 	static{
 		try{
-			Class.forName("org.gjt.mysql.Driver");
+			Class.forName("org.gjt.mm.mysql.Driver");
 		} catch(Exception e){
 			e.printStackTrace();
 		}
@@ -47,9 +47,9 @@ public class ConnectionManager {
 	public static Connection createConnection(){
 		String host = Config.dbHost;
 		String user = Config.dbUsername;
-		String password = Config.password;
+		String password = Config.dbPassword;
 		String dbName = Config.dbName;
-		String url = "jdbc:mysql://" + host + ":3306" + dbName + "?characterEncoding=utf8";
+		String url = "jdbc:mysql://" + host + ":3306/" + dbName + "?characterEncoding=utf8";
 		Connection conn = null;
 		try{
 			conn= DriverManager.getConnection(url, user, password);
