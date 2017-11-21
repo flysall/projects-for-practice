@@ -37,6 +37,7 @@ public class CrawlerWorker implements Runnable {
 			// 检查页面爬取合法性
 			if (!handler.check(fetchedPage)) {
 				Log.info("Crawler-" + threadIndex + ": switch IP to");
+				Log.info("The current url is: " + url);
 				continue;
 			}
 			if (fetchedPage.getType() == CrawlerParams.FETCHEDPAGETYPE_JSON) {

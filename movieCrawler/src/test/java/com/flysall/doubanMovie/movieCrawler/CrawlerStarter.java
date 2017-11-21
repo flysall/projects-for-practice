@@ -49,10 +49,10 @@ public class CrawlerStarter {
 	 * 用于初始化的爬虫连接
 	 */
 	private static void initializeQueue() {
-		for (int i = 0; i < 2; i++) {
+		for (int i = 1; i < 6; i++) {
 			UrlQueue.addElement(
 					"http://movie.douban.com/j/search_subjects?type=movie&tag=%E7%83%AD%E9%97%A8&sort=recommend&page_limit=20&page_start="
-							+ i * 20 + 1);
+							+ i);
 		}
 	}
 }
